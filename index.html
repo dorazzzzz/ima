@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>hi</title>
 </head>
+
 <body>
-    <h1>test</h1>
-    Here is some text
-    and some more text
+
+    <div class="scene" id="scene1">
+        <img id="rival" src="img/rival.png">
+        <h1 id="scene1title">Hi How Would You Like to Pay?</h1>
+        <div id="buttondiv">
+            <button onClick = "nextScene()"> Start </button>
+        </div>
+    </div>
+
+    <div class="scene" id="scene2">
+        <h1>scene2</h1>
+
+        <div class="dragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="bgdrag1">
+                <img id="card" id="drag1" src="img/card.png" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="bgdrag2">
+                <img id="phone" id="drag2" src="img/phone.png" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="bgdrag3"> 
+                <img id="qrcode" id="drag3" src="img/qrcode.png" draggable="true" ondragstart="drag(event)">
+            </div>
+        </div>
+
+        <div class="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="pos" src="img/pos.png">
+            <img id="nfc" src="img/nfc.png">
+            <img id="qr" src="img/scan.png">
+        </div>
+
+        <div id="choice1">Drag the card to the POS terminal!</div>
+        <div id="choice2">Drag the phone to the QR code scanner!</div>
+        <div id="choice3">Drag the phone to the NFC receiver!</div>
+    </div>
+
+    <div class="scene" id="scene3">
+        <h1>Let's explore POS payment!</h1>
+        <img id="posintro" src="img/pos.png">
+        <button id="goback" onClick = "goBack()">Go Back</button>
+
+        <div class="stack1">
+            <div class="card1">POS stands for Point-of-Sales</div>
+            <div class="card1">"A payment terminal allows a merchant to capture required credit and debit card information and to transmit this data to the merchant services provider or bank for authorization and finally, to transfer funds to the merchant. "</div>
+            <div class="card1">3</div>
+            <div class="card1">4</div>
+            <div class="card1">5</div>
+            <div class="card1">6</div>
+        </div>
+    </div>
+
+    <div class="scene" id="scene4">
+        <h1>Let's explore NFC payment!</h1>
+        <img id="nfcintro" src="img/nfc.png">
+        <img width="60%" src="gif/nfcloop.gif">
+        <img width="60%" src="gif/nfc.gif">
+        <!-- <video id="nfcvid" width="50%" controls autoplay>
+            <source src="vid/nfc.mp4" type="video/mp4">
+        </video> -->
+
+        <button id="goback" onClick = "goBack()">Go Back</button>
+    </div>
+
+    <div class="scene" id="scene5">
+        <h1>Let's explore QR code payment!</h1>
+        <img id="qrintro" src="img/scan.png">
+        <button id="goback" onClick = "goBack()">Go Back</button>
+        
+        <!-- <div class="factors">
+            <div id="factor1">Technological Factor</div>
+            <div id="factor2">Historical Factor</div>
+            <div id="factor3">Cultural Factor</div>
+            <div id="factor4">Regulatory Factor</div>
+        </div> -->
+    </div>
+
+    <script src="code.js"></script>
+
 </body>
-<script src="code.js"></script>
+
 </html>

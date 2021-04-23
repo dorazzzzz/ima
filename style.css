@@ -1,0 +1,221 @@
+body {
+	height: 100%;
+	margin: 0px;
+    /* overflow: hidden; */
+    font-family: futura;
+    background-color: #6593A6;
+}
+
+#scene2, #scene3, #scene4, #scene5 {
+    display: none;
+}
+
+#scene1 {
+    background-color: #6593A6;
+    /* position: absolute; */
+}
+
+#rival {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+#scene1title {
+    color: #F2C063;
+    font-size: 60px;
+    text-align: center;
+    /* padding: 10%; */
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -30%;
+}
+
+#buttondiv {
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+
+#goback {
+    position: absolute;
+    top: 97%;
+    right: 1%;
+}
+
+/* scene2 */
+
+#pos {
+    width: 10%;
+    height: auto;
+    /* display: block; */
+    float: right;
+    margin-right: 70%;
+    margin-top: -10%;
+}
+
+#card {
+    width: 5%;
+    float: left;
+    margin-left: 15%;
+    margin-top: 30%;
+}
+
+#choice1 {
+    /* float: left; */
+    position: relative;
+    text-align: center;
+    margin-left: -55%;
+    margin-top: 45%;
+}
+
+#nfc {
+    width: 10%;
+    height: auto;
+    /* display: block; */
+    float: right;
+    margin-right: 43%;
+    margin-top: -35%;
+}
+
+#phone {
+    width: 5%;
+    float: left;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#choice2 {
+    /* float: right; */
+    text-align: center;
+    position: relative;
+    margin-left: 60%;
+    margin-top: -5%;
+}
+
+#qrcode {
+    width: 5%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin-left: 25%;
+    margin-top: 30%;
+}
+
+#qr {
+    width: 10%;
+    float: right;
+    margin-right: 13%;
+    margin-top: -13%;
+}
+
+#choice3 {
+    /* float: right; */
+    text-align: center;
+    position: relative;
+    margin-top: -45%;
+    margin-right: 2%;
+}
+
+/* posintroscene */
+#posintro {
+    width: 20%;
+    margin-top: 15%;
+}
+
+.stack1 {
+    width: 800px;
+    height: 600px;
+    /* background-color: red; */
+    /* background-image: url(img/creditCard.png);
+    background-repeat: no-repeat; */
+    position: relative;
+    margin-left: 30%;
+    margin-top: -45%;
+}
+
+.card1 {
+    width: 80%;
+    min-height: 80%;
+    /* background-color: #f2cf63; */
+    background-image: url(img/creditCard.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    font-size: 20px;
+    color: #58595b;
+    /* box-shadow: 0 5px 5px 0 #F2C063; */
+    transition: transform 300ms;
+}
+
+.card1:nth-last-child(n + 4) {
+    --y: calc(-50% + -30px);
+    transform: translate(-50%, var(--y)) scale(0.85);
+    /* box-shadow: 0 0 1px 1px #f2cf63; */
+}
+.card1:nth-last-child(3) {
+    --y: calc(-50% + -15px);
+    transform: translate(-50%, var(--y)) scale(0.9);
+}
+.card1:nth-last-child(2) {
+    --y: calc(-50%);
+    transform: translate(-50%, var(--y)) scale(0.95);
+}
+.card1:nth-last-child(1) {
+    --y: calc(-50% + 15px);
+    transform: translate(-50%, var(--y)) scale(1);
+}
+  
+@keyframes swap {
+    50% {
+      transform: translate(-50%, calc(var(--y) - 250px)) scale(0.85) rotate(-5deg);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
+      z-index: -1;
+    }
+}
+
+#nfcintro {
+    width: 20%;
+}
+
+#qrintro {
+    width: 20%;
+}
+
+/* #factor1, #factor2, #factor3, #factor4 {
+    padding: 2%;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    background-color: #F2CF63;
+}
+
+#factor1:hover {
+    background-color: #F2C063;
+}
+
+#factor2:hover {
+    background-color: #F2C063;
+}
+
+#factor3:hover {
+    background-color: #F2C063;
+}
+
+#factor4:hover {
+    background-color: #F2C063;
+} */
+
