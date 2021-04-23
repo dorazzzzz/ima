@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <title>hi</title>
 </head>
 
@@ -8,14 +10,14 @@
 
     <div class="scene" id="scene1">
         <img id="rival" src="img/rival.png">
-        <h1 id="scene1title">Hi How Would You Like to Pay?</h1>
+        <div id="scene1title">Hi How Would You Like to Pay?</div>
         <div id="buttondiv">
             <button onClick = "nextScene()"> Start </button>
         </div>
     </div>
 
     <div class="scene" id="scene2">
-        <h1>scene2</h1>
+        <h1>Choose a Payment Method to Explore!</h1>
 
         <div class="dragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
             <div class="bgdrag1">
@@ -36,8 +38,8 @@
         </div>
 
         <div id="choice1">Drag the card to the POS terminal!</div>
-        <div id="choice2">Drag the phone to the QR code scanner!</div>
-        <div id="choice3">Drag the phone to the NFC receiver!</div>
+        <div id="choice2">Drag the phone to the NFC receiver!</div>
+        <div id="choice3">Drag the phone to the QR code scanner!</div>
     </div>
 
     <div class="scene" id="scene3">
@@ -57,12 +59,49 @@
 
     <div class="scene" id="scene4">
         <h1>Let's explore NFC payment!</h1>
-        <img id="nfcintro" src="img/nfc.png">
-        <img width="60%" src="gif/nfcloop.gif">
-        <img width="60%" src="gif/nfc.gif">
-        <!-- <video id="nfcvid" width="50%" controls autoplay>
-            <source src="vid/nfc.mp4" type="video/mp4">
-        </video> -->
+        <!-- <img id="nfcintro" src="img/nfc.png"> -->
+        <img id="nfcgif">
+        <div id="nfcgifIntro">Deconstructing NFC Technology</div>
+
+        <div class="stack2">
+            <div class="card2" style="--i: -1">
+                <div class="content2" style="--j:1">
+                    <h2>Intro 1</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 0">
+                <div class="content2" style="--j:2">
+                    <h2>Intro 2</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 1">
+                <div class="content2" style="--j:3">
+                    <h2>Intro 3</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 2">
+                <div class="content2" style="--j:4">
+                    <h2>Intro 4</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 3">
+                <div class="content2" style="--j:5">
+                    <h2>Intro 5</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 4">
+                <div class="content2" style="--j:6">
+                    <h2>Intro 6</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+        </div>
+
 
         <button id="goback" onClick = "goBack()">Go Back</button>
     </div>
@@ -71,13 +110,6 @@
         <h1>Let's explore QR code payment!</h1>
         <img id="qrintro" src="img/scan.png">
         <button id="goback" onClick = "goBack()">Go Back</button>
-        
-        <!-- <div class="factors">
-            <div id="factor1">Technological Factor</div>
-            <div id="factor2">Historical Factor</div>
-            <div id="factor3">Cultural Factor</div>
-            <div id="factor4">Regulatory Factor</div>
-        </div> -->
     </div>
 
     <script src="code.js"></script>

@@ -18,13 +18,13 @@ function goBack() {
     document.getElementById("scene4").style.display = "none";
     document.getElementById("scene5").style.display = "none";
     document.getElementById("pos").style.borderRadius = "0";
-    document.getElementById("pos").style.backgroundColor = "#6593a6";
+    document.getElementById("pos").style.backgroundColor = "#f2e9d8";
     document.getElementById("pos").style.opacity = "1";
     document.getElementById("nfc").style.borderRadius = "0";
-    document.getElementById("nfc").style.backgroundColor = "#6593a6";
+    document.getElementById("nfc").style.backgroundColor = "#f2e9d8";
     document.getElementById("nfc").style.opacity = "1";
     document.getElementById("qr").style.borderRadius = "0";
-    document.getElementById("qr").style.backgroundColor = "#6593a6";
+    document.getElementById("qr").style.backgroundColor = "#f2e9d8";
     document.getElementById("qr").style.opacity = "1";
 }
 
@@ -42,15 +42,15 @@ function drag(ev) {
 
     if (ev.target.id === "card") {
         document.getElementById("pos").style.borderRadius = "30%";
-        document.getElementById("pos").style.backgroundColor = "#f2f2f2";
+        document.getElementById("pos").style.backgroundColor = "#d9bba9";
         document.getElementById("pos").style.opacity = "0.5";
     } else if (ev.target.id === "phone") {
         document.getElementById("nfc").style.borderRadius = "30%";
-        document.getElementById("nfc").style.backgroundColor = "#f2f2f2";
+        document.getElementById("nfc").style.backgroundColor = "#d9bba9";
         document.getElementById("nfc").style.opacity = "0.5";
     } else if (ev.target.id === "qrcode") {
         document.getElementById("qr").style.borderRadius = "30%";
-        document.getElementById("qr").style.backgroundColor = "#f2f2f2";
+        document.getElementById("qr").style.backgroundColor = "#d9bba9";
         document.getElementById("qr").style.opacity = "0.5";
     }
 }
@@ -74,6 +74,9 @@ function drop(ev) {
         // console.log("nfc!!");
         document.getElementById("scene2").style.display = "none";
         document.getElementById("scene4").style.display = "block";
+        document.getElementById("nfcgif").src = null;
+        setTimeout(() => document.getElementById("nfcgif").src = "img/nfc.gif", 10);
+        console.info('resetting img.src')
     } else if (data === "qrcode") {
         // console.log("qrcode!");
         document.getElementById("scene2").style.display = "none";
