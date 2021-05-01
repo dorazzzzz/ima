@@ -1,6 +1,6 @@
 body {
 	height: 100%;
-	margin: 20px;
+	margin: 0;
     /* overflow: hidden; */
     background-color: #f2e9d8;
 }
@@ -19,6 +19,21 @@ button {
     font-family: 'Poppins', sans-serif;
     border-radius: 5rem;
 }
+
+#svgUp {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-color: #f2e9d8;
+}
+
+#svgBot {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
 #scene2, #scene3, #scene4, #scene5 {
     display: none;
 }
@@ -45,10 +60,10 @@ button {
     text-align: center;
     /* padding: 10%; */
     margin: auto;
-    width: 30%;
+    width: 60%;
     position: absolute;
-    top: 13%;
-    left: 35%;
+    top: 25%;
+    left: 20%;
 }
 
 #buttondiv {
@@ -139,6 +154,124 @@ button {
     top: 60%;
 }
 
+/* .timeline {
+    padding: 100px;
+} */
+
+.lines {
+    width: 100%;
+    /* height: 45px; */
+    position: relative;
+    content: '';
+    margin: auto;
+    height: 2px;
+    background: #a68776;
+    top: 500%;
+    /* width: 45%;
+    top: 45%; */
+}
+
+/* .lines::after, .lines::before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #a68776;
+    width: 45%;
+    top: 45%;
+}
+
+.lines::after {
+    left: 0;
+}
+
+.lines::before {
+    right: 0;
+} */
+
+/* .circle {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #a68776;
+    left: 20;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+} */
+
+.timeline-wrapper {
+    margin: auto;
+}
+
+#bar-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    top: 10%;
+}
+
+#bar-container ul {
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    /* margin-top: 30%; */
+    top: 482%;
+}
+
+#bar-container li::before {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px #a68776;
+    transition: all ease 0.3s;
+}
+
+ #bar-container li:hover::before {
+    background: #a68776;
+}
+
+#bar-container li {
+    list-style: none;
+    float: left;
+    width: 33%;
+    text-align: center;
+    color: #a68776;
+    font-size: 20px;
+    transition: all ease 0.3s;
+    vertical-align: bottom;
+    height: 100px;
+    position: relative;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#bar-container li .inner {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 20px;
+}
+
+/* #bar-container li::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: solid 7px #a68776;
+    transition: all ease 0.3s;
+    margin-top: 40px;
+} */
+
+
 /* posintroscene */
 #posintro {
     width: 20%;
@@ -152,8 +285,8 @@ button {
     /* background-image: url(img/creditCard.png);
     background-repeat: no-repeat; */
     position: relative;
-    margin-left: 30%;
-    margin-top: -45%;
+    margin-left: 50%;
+    margin-top: 5%;
 }
 
 .card1 {
@@ -292,4 +425,38 @@ button {
     text-align: center;
     left: 12%;
     top: 65%;
+}
+
+#qrgifIntro {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    color: #a68776;
+    position: absolute;
+    text-align: center;
+    left: 12%;
+    top: 65%;
+}
+
+#qrgif {
+    position: absolute;
+    width: 40%;
+    left: 0%;
+    top: -5%;
+}
+
+#posgifIntro {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    color: #a68776;
+    position: absolute;
+    text-align: center;
+    left: 12%;
+    top: 65%;
+}
+
+#posgif {
+    position: absolute;
+    width: 70%;
+    left: -13%;
+    top: 10%;
 }

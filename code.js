@@ -70,6 +70,9 @@ function drop(ev) {
         document.getElementById("scene3").style.display = "block";
         // cardcount = cardcount + 1;
         // console.log(cardcount);
+        document.getElementById("posgif").src = null;
+        setTimeout(() => document.getElementById("posgif").src = "img/pos.gif", 10);
+        console.info('resetting img.src')
     } else if (data === "phone") {
         // console.log("nfc!!");
         document.getElementById("scene2").style.display = "none";
@@ -81,8 +84,13 @@ function drop(ev) {
         // console.log("qrcode!");
         document.getElementById("scene2").style.display = "none";
         document.getElementById("scene5").style.display = "block";
+        document.getElementById("qrgif").src = null;
+        setTimeout(() => document.getElementById("qrgif").src = "img/qr.gif", 10);
+        console.info('resetting img.src')
     }
 }
+
+
 
 let stack1 = document.querySelector(".stack1");
 
@@ -100,3 +108,6 @@ function swap(ev) {
         stack1.prepend(card1);
     }, 700);
 }
+
+
+

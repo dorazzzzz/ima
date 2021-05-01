@@ -9,11 +9,13 @@
 <body>
 
     <div class="scene" id="scene1">
-        <img id="rival" src="img/rival.png">
+        <svg id="svgUp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="1" d="M0,128L21.8,149.3C43.6,171,87,213,131,192C174.5,171,218,85,262,69.3C305.5,53,349,107,393,106.7C436.4,107,480,53,524,42.7C567.3,32,611,64,655,80C698.2,96,742,96,785,106.7C829.1,117,873,139,916,154.7C960,171,1004,181,1047,154.7C1090.9,128,1135,64,1178,37.3C1221.8,11,1265,21,1309,42.7C1352.7,64,1396,96,1418,112L1440,128L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>
+        <!-- <img id="rival" src="img/rival.png"> -->
         <div id="scene1title">Hi How Would You Like to Pay?</div>
         <div id="buttondiv">
             <button onClick = "nextScene()"> Start </button>
         </div>
+        <svg id="svgBot"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="1" d="M0,128L21.8,149.3C43.6,171,87,213,131,192C174.5,171,218,85,262,69.3C305.5,53,349,107,393,106.7C436.4,107,480,53,524,42.7C567.3,32,611,64,655,80C698.2,96,742,96,785,106.7C829.1,117,873,139,916,154.7C960,171,1004,181,1047,154.7C1090.9,128,1135,64,1178,37.3C1221.8,11,1265,21,1309,42.7C1352.7,64,1396,96,1418,112L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
     </div>
 
     <div class="scene" id="scene2">
@@ -40,12 +42,77 @@
         <div id="choice1">Drag the card to the POS terminal!</div>
         <div id="choice2">Drag the phone to the NFC receiver!</div>
         <div id="choice3">Drag the phone to the QR code scanner!</div>
+
+        <!-- <div class="timeline">
+            <div class="timelineItems">
+                <div class="year">
+                    <p>1979</p>
+                </div>
+                <div class="tlintro">
+                    <p>The first POS terminal was introduced by Visa in 1979.</p>
+                </div>
+            </div>
+
+            <div class="timelineItems">
+                <div class="year">
+                    <p>1983</p>
+                </div>
+                <div class="tlintro">
+                    <p>RFID, the technology on which NFC is based on, was invented in 1983 by Charles Walton.</p>
+                </div>
+            </div>
+
+            <div class="timelineItems">
+                <div class="year">
+                    <p>1994</p>
+                </div>
+                <div class="tlintro">
+                    <p>QR code was invented in 1994 by Denso Wave, a Japanese company.</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- TIMELINE -->
+
+        <!-- <div class="timeline">
+            <div class="lines">
+                <div class="circle"></div>
+            </div>
+        </div> -->
+
+        <div class="timeline-wrapper">
+            <div id="bar-container">
+                <ul>
+                    <li class="payment payment1 active">
+                        <div class="inner">1979</div>
+                    </li>
+                    <li class="payment payment2">
+                        <div class="inner">1983</div>
+                    </li>
+                    <li class="payment payment3">
+                        <div class="inner">1994</div>
+                    </li>
+                </ul>
+
+                <div class="lines">
+                    <div id="line-process"></div>
+                </div>
+            </div>
+
+        </div>
+    
+        </div>
+
     </div>
 
     <div class="scene" id="scene3">
         <h1>Let's explore POS payment!</h1>
-        <img id="posintro" src="img/pos.png">
-        <button id="goback" onClick = "goBack()">Go Back</button>
+        <!-- <img id="posintro" src="img/pos.png"> -->
+        <!-- <button class="goback" onClick = "goBack()">Go Back</button> -->
+
+        <img id="posgif">
+        <div id="posgifIntro">Deconstructing POS Terminal</div>
+
 
         <div class="stack1">
             <div class="card1">POS stands for Point-of-Sales</div>
@@ -55,6 +122,8 @@
             <div class="card1">5</div>
             <div class="card1">6</div>
         </div>
+
+        <button id="goback" onClick = "goBack()">Go Back</button>
     </div>
 
     <div class="scene" id="scene4">
@@ -108,11 +177,55 @@
 
     <div class="scene" id="scene5">
         <h1>Let's explore QR code payment!</h1>
-        <img id="qrintro" src="img/scan.png">
+        <!-- <img id="qrintro" src="img/scan.png"> -->
+
+        <img id="qrgif">
+        <div id="qrgifIntro">Deconstructing QR Code Technology</div>
+
+        <div class="stack2">
+            <div class="card2" style="--i: -1">
+                <div class="content2" style="--j:1">
+                    <h2>Intro 1</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 0">
+                <div class="content2" style="--j:2">
+                    <h2>Intro 2</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 1">
+                <div class="content2" style="--j:3">
+                    <h2>Intro 3</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 2">
+                <div class="content2" style="--j:4">
+                    <h2>Intro 4</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 3">
+                <div class="content2" style="--j:5">
+                    <h2>Intro 5</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+            <div class="card2" style="--i: 4">
+                <div class="content2" style="--j:6">
+                    <h2>Intro 6</h2>
+                    <p>some intro here</p>
+                </div>
+            </div>
+        </div>
         <button id="goback" onClick = "goBack()">Go Back</button>
+
     </div>
 
     <script src="code.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
 
 </body>
 
