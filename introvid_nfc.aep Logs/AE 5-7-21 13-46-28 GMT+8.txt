@@ -1,0 +1,1 @@
+  5/7/21 13:46:28 GMT+8: Starting composition “Comp 1”.  Output To: /Users/Dora/Desktop/ima/vid/nfc.mov    5/7/21 13:46:32 GMT+8: Finished composition “Comp 1”.  Total Time Elapsed: 4 SecondsLog closed on 5/7/21 at 13:46:32 GMT+8

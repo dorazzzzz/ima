@@ -41,15 +41,15 @@ function drag(ev) {
     console.log(ev.target.id);
 
     if (ev.target.id === "card") {
-        document.getElementById("pos").style.borderRadius = "30%";
+        document.getElementById("pos").style.borderRadius = "20%";
         document.getElementById("pos").style.backgroundColor = "#d9bba9";
         document.getElementById("pos").style.opacity = "0.5";
     } else if (ev.target.id === "phone") {
-        document.getElementById("nfc").style.borderRadius = "30%";
+        document.getElementById("nfc").style.borderRadius = "20%";
         document.getElementById("nfc").style.backgroundColor = "#d9bba9";
         document.getElementById("nfc").style.opacity = "0.5";
     } else if (ev.target.id === "qrcode") {
-        document.getElementById("qr").style.borderRadius = "30%";
+        document.getElementById("qr").style.borderRadius = "20%";
         document.getElementById("qr").style.backgroundColor = "#d9bba9";
         document.getElementById("qr").style.opacity = "0.5";
     }
@@ -90,24 +90,80 @@ function drop(ev) {
     }
 }
 
-
-
-let stack1 = document.querySelector(".stack1");
-
-[...stack1.children].reverse().forEach(i => stack1.append(i));
-
-stack1.addEventListener("click", swap);
-
-function swap(ev) {
-    let card1 = document.querySelector(".card1:last-child");
-    if (ev.target !== card1) return;
-    card1.style.animation = "swap 700ms forwards";
-
-    setTimeout(() => {
-        card1.style.animation = "";
-        stack1.prepend(card1);
-    }, 700);
+function timelineHover1() {
+    document.getElementById('dot1').style.backgroundColor = "#a68776";
+    document.getElementById('sentence1').style.color = "#a68776";
+    document.getElementById('choice1').style.color = "#a68776";
 }
+
+function timelineLeave1() {
+    document.getElementById("dot1").style.backgroundColor = "";
+    document.getElementById('sentence1').style.color = "#f2e9d8";
+    document.getElementById('choice1').style.color = "#f2e9d8";
+}
+
+function timelineHover2() {
+    document.getElementById('dot2').style.backgroundColor = "#a68776";
+    document.getElementById('sentence2').style.color = "#a68776";
+    document.getElementById('choice2').style.color = "#a68776";
+}
+
+function timelineLeave2() {
+    document.getElementById("dot2").style.backgroundColor = "";
+    document.getElementById('sentence2').style.color = "#f2e9d8";
+    document.getElementById('choice2').style.color = "#f2e9d8";
+}
+
+function timelineHover3() {
+    document.getElementById('dot3').style.backgroundColor = "#a68776";
+    document.getElementById('sentence3').style.color = "#a68776";
+    document.getElementById('choice3').style.color = "#a68776";
+}
+
+function timelineLeave3() {
+    document.getElementById("dot3").style.backgroundColor = "";
+    document.getElementById('sentence3').style.color = "#f2e9d8";
+    document.getElementById('choice3').style.color = "#f2e9d8";
+}
+
+
+
+// posintro
+var li_items = document.querySelectorAll(".accordion_wrap ul li");
+var ul = document.querySelector(".accordion_wrap ul");
+
+li_items.forEach(function(item){
+	item.addEventListener("click", function(){
+		li_items.forEach(function(item){
+			item.classList.remove("active");
+		})
+		item.classList.add("active");
+	});
+});
+
+ul.addEventListener("mouseleave", function(){
+	li_items.forEach(function(item){
+		item.classList.remove("active");
+	})
+});
+
+
+// let stack1 = document.querySelector(".stack1");
+
+// [...stack1.children].reverse().forEach(i => stack1.append(i));
+
+// stack1.addEventListener("click", swap);
+
+// function swap(ev) {
+//     let card1 = document.querySelector(".card1:last-child");
+//     if (ev.target !== card1) return;
+//     card1.style.animation = "swap 700ms forwards";
+
+//     setTimeout(() => {
+//         card1.style.animation = "";
+//         stack1.prepend(card1);
+//     }, 700);
+// }
 
 
 
