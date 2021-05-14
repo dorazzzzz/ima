@@ -12,6 +12,26 @@ function nextScene() {
 	}
 }
 
+$(function () {
+	$('#scene1title').textillate({
+        loop: true,
+        in:{
+            effect: "flash",
+            delayScale: 3, 
+            // delay: 20,
+            shuffle: true, 
+        },
+        out:{
+            effect: "bounce",
+            delayScale: 5,
+            // delay: 20,
+            // reverse: true,
+            shuffle: true,
+        }
+    });
+})
+
+
 function goBack() {
     document.getElementById("scene2").style.display = "block";
     document.getElementById("scene3").style.display = "none";
@@ -94,6 +114,24 @@ function timelineHover1() {
     document.getElementById('dot1').style.backgroundColor = "#a68776";
     document.getElementById('sentence1').style.color = "#a68776";
     document.getElementById('choice1').style.color = "#a68776";
+
+    $(function () {
+        $('#choice1').textillate({
+            loop: true,
+            in:{
+                effect: "tada",
+                delayScale: 3, 
+                // delay: 20,
+                sync: true, 
+            },
+            out:{
+                effect: "tada",
+                delayScale: 3, 
+                // delay: 20,
+                sync: true, 
+            }
+        });
+    })
 }
 
 function timelineLeave1() {
@@ -106,6 +144,24 @@ function timelineHover2() {
     document.getElementById('dot2').style.backgroundColor = "#a68776";
     document.getElementById('sentence2').style.color = "#a68776";
     document.getElementById('choice2').style.color = "#a68776";
+
+    $(function () {
+        $('#choice2').textillate({
+            loop: true,
+            in:{
+                effect: "tada",
+                delayScale: 3, 
+                // delay: 20,
+                sync: true, 
+            },
+            out:{
+                effect: "tada",
+                delayScale: 3, 
+                // delay: 20,
+                sync: true, 
+            }
+        });
+    })    
 }
 
 function timelineLeave2() {
@@ -118,6 +174,24 @@ function timelineHover3() {
     document.getElementById('dot3').style.backgroundColor = "#a68776";
     document.getElementById('sentence3').style.color = "#a68776";
     document.getElementById('choice3').style.color = "#a68776";
+
+    $(function () {
+        $('#choice3').textillate({
+            loop: true,
+            in:{
+                effect: "tada",
+                delayScale: 3, 
+                // delay: 20,
+                sync: true, 
+            },
+            out:{
+                effect: "tada",
+                delayScale: 3, 
+                // delay: 20,
+                sync: true, 
+            }
+        });
+    })
 }
 
 function timelineLeave3() {
@@ -147,23 +221,57 @@ ul.addEventListener("mouseleave", function(){
 	})
 });
 
+$(function () {
+	$('#posguide').textillate({
+        loop: true,
+        in:{
+            effect: "tada",
+            delayScale: 30, 
+            delay: 200,
+            sync: true, 
+        },
+        out:{
+            effect: "tada",
+            delayScale: 10, 
+            delay: 200,
+            sync: true, 
+        }
+    });
 
-// let stack1 = document.querySelector(".stack1");
+    $('#qrguide').textillate({
+        loop: true,
+        in:{
+            effect: "tada",
+            delayScale: 30, 
+            delay: 200,
+            sync: true, 
+        },
+        out:{
+            effect: "tada",
+            delayScale: 10, 
+            delay: 200,
+            sync: true, 
+        }
+    });
 
-// [...stack1.children].reverse().forEach(i => stack1.append(i));
+    $('#nfcguide').textillate({
+        loop: true,
+        in:{
+            effect: "tada",
+            delayScale: 30, 
+            delay: 200,
+            sync: true, 
+        },
+        out:{
+            effect: "tada",
+            delayScale: 10, 
+            delay: 200,
+            sync: true, 
+        }
+    });
 
-// stack1.addEventListener("click", swap);
 
-// function swap(ev) {
-//     let card1 = document.querySelector(".card1:last-child");
-//     if (ev.target !== card1) return;
-//     card1.style.animation = "swap 700ms forwards";
-
-//     setTimeout(() => {
-//         card1.style.animation = "";
-//         stack1.prepend(card1);
-//     }, 700);
-// }
+})
 
 
 
