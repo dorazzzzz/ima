@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="animate.css">
     <title>hi</title>
@@ -13,49 +16,65 @@
     <div class="scene" id="scene1">
         <!-- <svg id="svgUp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="1" d="M0,128L21.8,149.3C43.6,171,87,213,131,192C174.5,171,218,85,262,69.3C305.5,53,349,107,393,106.7C436.4,107,480,53,524,42.7C567.3,32,611,64,655,80C698.2,96,742,96,785,106.7C829.1,117,873,139,916,154.7C960,171,1004,181,1047,154.7C1090.9,128,1135,64,1178,37.3C1221.8,11,1265,21,1309,42.7C1352.7,64,1396,96,1418,112L1440,128L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg> -->
         <!-- <svg id="svgUp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="3" d="M0,320L36.9,192L73.8,160L110.8,320L147.7,64L184.6,224L221.5,128L258.5,160L295.4,320L332.3,128L369.2,32L406.2,192L443.1,192L480,128L516.9,192L553.8,192L590.8,32L627.7,224L664.6,64L701.5,96L738.5,192L775.4,96L812.3,224L849.2,224L886.2,128L923.1,96L960,256L996.9,224L1033.8,288L1070.8,96L1107.7,96L1144.6,192L1181.5,256L1218.5,64L1255.4,160L1292.3,288L1329.2,160L1366.2,160L1403.1,0L1440,128L1440,0L1403.1,0L1366.2,0L1329.2,0L1292.3,0L1255.4,0L1218.5,0L1181.5,0L1144.6,0L1107.7,0L1070.8,0L1033.8,0L996.9,0L960,0L923.1,0L886.2,0L849.2,0L812.3,0L775.4,0L738.5,0L701.5,0L664.6,0L627.7,0L590.8,0L553.8,0L516.9,0L480,0L443.1,0L406.2,0L369.2,0L332.3,0L295.4,0L258.5,0L221.5,0L184.6,0L147.7,0L110.8,0L73.8,0L36.9,0L0,0Z"></path></svg> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="3" d="M0,192L6.2,197.3C12.3,203,25,213,37,213.3C49.2,213,62,203,74,213.3C86.2,224,98,256,111,229.3C123.1,203,135,117,148,106.7C160,96,172,160,185,192C196.9,224,209,224,222,202.7C233.8,181,246,139,258,133.3C270.8,128,283,160,295,160C307.7,160,320,128,332,106.7C344.6,85,357,75,369,64C381.5,53,394,43,406,69.3C418.5,96,431,160,443,197.3C455.4,235,468,245,480,250.7C492.3,256,505,256,517,229.3C529.2,203,542,149,554,122.7C566.2,96,578,96,591,128C603.1,160,615,224,628,213.3C640,203,652,117,665,106.7C676.9,96,689,160,702,181.3C713.8,203,726,181,738,160C750.8,139,763,117,775,117.3C787.7,117,800,139,812,154.7C824.6,171,837,181,849,202.7C861.5,224,874,256,886,250.7C898.5,245,911,203,923,181.3C935.4,160,948,160,960,138.7C972.3,117,985,75,997,48C1009.2,21,1022,11,1034,26.7C1046.2,43,1058,85,1071,101.3C1083.1,117,1095,107,1108,128C1120,149,1132,203,1145,213.3C1156.9,224,1169,192,1182,181.3C1193.8,171,1206,181,1218,192C1230.8,203,1243,213,1255,197.3C1267.7,181,1280,139,1292,133.3C1304.6,128,1317,160,1329,154.7C1341.5,149,1354,107,1366,128C1378.5,149,1391,235,1403,250.7C1415.4,267,1428,213,1434,186.7L1440,160L1440,0L1433.8,0C1427.7,0,1415,0,1403,0C1390.8,0,1378,0,1366,0C1353.8,0,1342,0,1329,0C1316.9,0,1305,0,1292,0C1280,0,1268,0,1255,0C1243.1,0,1231,0,1218,0C1206.2,0,1194,0,1182,0C1169.2,0,1157,0,1145,0C1132.3,0,1120,0,1108,0C1095.4,0,1083,0,1071,0C1058.5,0,1046,0,1034,0C1021.5,0,1009,0,997,0C984.6,0,972,0,960,0C947.7,0,935,0,923,0C910.8,0,898,0,886,0C873.8,0,862,0,849,0C836.9,0,825,0,812,0C800,0,788,0,775,0C763.1,0,751,0,738,0C726.2,0,714,0,702,0C689.2,0,677,0,665,0C652.3,0,640,0,628,0C615.4,0,603,0,591,0C578.5,0,566,0,554,0C541.5,0,529,0,517,0C504.6,0,492,0,480,0C467.7,0,455,0,443,0C430.8,0,418,0,406,0C393.8,0,382,0,369,0C356.9,0,345,0,332,0C320,0,308,0,295,0C283.1,0,271,0,258,0C246.2,0,234,0,222,0C209.2,0,197,0,185,0C172.3,0,160,0,148,0C135.4,0,123,0,111,0C98.5,0,86,0,74,0C61.5,0,49,0,37,0C24.6,0,12,0,6,0L0,0Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a68776" fill-opacity="3"
+                d="M0,192L6.2,197.3C12.3,203,25,213,37,213.3C49.2,213,62,203,74,213.3C86.2,224,98,256,111,229.3C123.1,203,135,117,148,106.7C160,96,172,160,185,192C196.9,224,209,224,222,202.7C233.8,181,246,139,258,133.3C270.8,128,283,160,295,160C307.7,160,320,128,332,106.7C344.6,85,357,75,369,64C381.5,53,394,43,406,69.3C418.5,96,431,160,443,197.3C455.4,235,468,245,480,250.7C492.3,256,505,256,517,229.3C529.2,203,542,149,554,122.7C566.2,96,578,96,591,128C603.1,160,615,224,628,213.3C640,203,652,117,665,106.7C676.9,96,689,160,702,181.3C713.8,203,726,181,738,160C750.8,139,763,117,775,117.3C787.7,117,800,139,812,154.7C824.6,171,837,181,849,202.7C861.5,224,874,256,886,250.7C898.5,245,911,203,923,181.3C935.4,160,948,160,960,138.7C972.3,117,985,75,997,48C1009.2,21,1022,11,1034,26.7C1046.2,43,1058,85,1071,101.3C1083.1,117,1095,107,1108,128C1120,149,1132,203,1145,213.3C1156.9,224,1169,192,1182,181.3C1193.8,171,1206,181,1218,192C1230.8,203,1243,213,1255,197.3C1267.7,181,1280,139,1292,133.3C1304.6,128,1317,160,1329,154.7C1341.5,149,1354,107,1366,128C1378.5,149,1391,235,1403,250.7C1415.4,267,1428,213,1434,186.7L1440,160L1440,0L1433.8,0C1427.7,0,1415,0,1403,0C1390.8,0,1378,0,1366,0C1353.8,0,1342,0,1329,0C1316.9,0,1305,0,1292,0C1280,0,1268,0,1255,0C1243.1,0,1231,0,1218,0C1206.2,0,1194,0,1182,0C1169.2,0,1157,0,1145,0C1132.3,0,1120,0,1108,0C1095.4,0,1083,0,1071,0C1058.5,0,1046,0,1034,0C1021.5,0,1009,0,997,0C984.6,0,972,0,960,0C947.7,0,935,0,923,0C910.8,0,898,0,886,0C873.8,0,862,0,849,0C836.9,0,825,0,812,0C800,0,788,0,775,0C763.1,0,751,0,738,0C726.2,0,714,0,702,0C689.2,0,677,0,665,0C652.3,0,640,0,628,0C615.4,0,603,0,591,0C578.5,0,566,0,554,0C541.5,0,529,0,517,0C504.6,0,492,0,480,0C467.7,0,455,0,443,0C430.8,0,418,0,406,0C393.8,0,382,0,369,0C356.9,0,345,0,332,0C320,0,308,0,295,0C283.1,0,271,0,258,0C246.2,0,234,0,222,0C209.2,0,197,0,185,0C172.3,0,160,0,148,0C135.4,0,123,0,111,0C98.5,0,86,0,74,0C61.5,0,49,0,37,0C24.6,0,12,0,6,0L0,0Z">
+            </path>
+        </svg>
         <!-- <img id="rival" src="img/rival.png"> -->
         <div id="scene1title">Deconstructing Digital Payment</div>
         <div id="buttondiv">
-            <button onClick = "nextScene()" id="start"> Start </button>
+            <button onClick="nextScene()" id="start"> Start </button>
         </div>
         <!-- <svg id="svgBot"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="1" d="M0,128L21.8,149.3C43.6,171,87,213,131,192C174.5,171,218,85,262,69.3C305.5,53,349,107,393,106.7C436.4,107,480,53,524,42.7C567.3,32,611,64,655,80C698.2,96,742,96,785,106.7C829.1,117,873,139,916,154.7C960,171,1004,181,1047,154.7C1090.9,128,1135,64,1178,37.3C1221.8,11,1265,21,1309,42.7C1352.7,64,1396,96,1418,112L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg> -->
         <!-- <svg id="svgBot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d0d0d" fill-opacity="1" d="M0,224L36.9,32L73.8,288L110.8,64L147.7,160L184.6,256L221.5,160L258.5,32L295.4,0L332.3,128L369.2,192L406.2,320L443.1,224L480,128L516.9,256L553.8,192L590.8,192L627.7,160L664.6,96L701.5,128L738.5,320L775.4,96L812.3,224L849.2,160L886.2,160L923.1,0L960,224L996.9,0L1033.8,224L1070.8,32L1107.7,32L1144.6,64L1181.5,160L1218.5,320L1255.4,32L1292.3,128L1329.2,288L1366.2,256L1403.1,64L1440,160L1440,320L1403.1,320L1366.2,320L1329.2,320L1292.3,320L1255.4,320L1218.5,320L1181.5,320L1144.6,320L1107.7,320L1070.8,320L1033.8,320L996.9,320L960,320L923.1,320L886.2,320L849.2,320L812.3,320L775.4,320L738.5,320L701.5,320L664.6,320L627.7,320L590.8,320L553.8,320L516.9,320L480,320L443.1,320L406.2,320L369.2,320L332.3,320L295.4,320L258.5,320L221.5,320L184.6,320L147.7,320L110.8,320L73.8,320L36.9,320L0,320Z"></path></svg> -->
         <!-- <svg id="svgBot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="3" d="M0,96L36.9,128L73.8,128L110.8,192L147.7,320L184.6,160L221.5,32L258.5,64L295.4,192L332.3,32L369.2,128L406.2,288L443.1,128L480,128L516.9,192L553.8,96L590.8,288L627.7,160L664.6,192L701.5,288L738.5,32L775.4,64L812.3,96L849.2,96L886.2,32L923.1,192L960,64L996.9,96L1033.8,224L1070.8,96L1107.7,192L1144.6,64L1181.5,192L1218.5,192L1255.4,160L1292.3,0L1329.2,64L1366.2,160L1403.1,0L1440,128L1440,320L1403.1,320L1366.2,320L1329.2,320L1292.3,320L1255.4,320L1218.5,320L1181.5,320L1144.6,320L1107.7,320L1070.8,320L1033.8,320L996.9,320L960,320L923.1,320L886.2,320L849.2,320L812.3,320L775.4,320L738.5,320L701.5,320L664.6,320L627.7,320L590.8,320L553.8,320L516.9,320L480,320L443.1,320L406.2,320L369.2,320L332.3,320L295.4,320L258.5,320L221.5,320L184.6,320L147.7,320L110.8,320L73.8,320L36.9,320L0,320Z"></path></svg> -->
-        <svg id="svgBot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="3" d="M0,192L6.2,197.3C12.3,203,25,213,37,213.3C49.2,213,62,203,74,213.3C86.2,224,98,256,111,229.3C123.1,203,135,117,148,106.7C160,96,172,160,185,192C196.9,224,209,224,222,202.7C233.8,181,246,139,258,133.3C270.8,128,283,160,295,160C307.7,160,320,128,332,106.7C344.6,85,357,75,369,64C381.5,53,394,43,406,69.3C418.5,96,431,160,443,197.3C455.4,235,468,245,480,250.7C492.3,256,505,256,517,229.3C529.2,203,542,149,554,122.7C566.2,96,578,96,591,128C603.1,160,615,224,628,213.3C640,203,652,117,665,106.7C676.9,96,689,160,702,181.3C713.8,203,726,181,738,160C750.8,139,763,117,775,117.3C787.7,117,800,139,812,154.7C824.6,171,837,181,849,202.7C861.5,224,874,256,886,250.7C898.5,245,911,203,923,181.3C935.4,160,948,160,960,138.7C972.3,117,985,75,997,48C1009.2,21,1022,11,1034,26.7C1046.2,43,1058,85,1071,101.3C1083.1,117,1095,107,1108,128C1120,149,1132,203,1145,213.3C1156.9,224,1169,192,1182,181.3C1193.8,171,1206,181,1218,192C1230.8,203,1243,213,1255,197.3C1267.7,181,1280,139,1292,133.3C1304.6,128,1317,160,1329,154.7C1341.5,149,1354,107,1366,128C1378.5,149,1391,235,1403,250.7C1415.4,267,1428,213,1434,186.7L1440,160L1440,320L1433.8,320C1427.7,320,1415,320,1403,320C1390.8,320,1378,320,1366,320C1353.8,320,1342,320,1329,320C1316.9,320,1305,320,1292,320C1280,320,1268,320,1255,320C1243.1,320,1231,320,1218,320C1206.2,320,1194,320,1182,320C1169.2,320,1157,320,1145,320C1132.3,320,1120,320,1108,320C1095.4,320,1083,320,1071,320C1058.5,320,1046,320,1034,320C1021.5,320,1009,320,997,320C984.6,320,972,320,960,320C947.7,320,935,320,923,320C910.8,320,898,320,886,320C873.8,320,862,320,849,320C836.9,320,825,320,812,320C800,320,788,320,775,320C763.1,320,751,320,738,320C726.2,320,714,320,702,320C689.2,320,677,320,665,320C652.3,320,640,320,628,320C615.4,320,603,320,591,320C578.5,320,566,320,554,320C541.5,320,529,320,517,320C504.6,320,492,320,480,320C467.7,320,455,320,443,320C430.8,320,418,320,406,320C393.8,320,382,320,369,320C356.9,320,345,320,332,320C320,320,308,320,295,320C283.1,320,271,320,258,320C246.2,320,234,320,222,320C209.2,320,197,320,185,320C172.3,320,160,320,148,320C135.4,320,123,320,111,320C98.5,320,86,320,74,320C61.5,320,49,320,37,320C24.6,320,12,320,6,320L0,320Z"></path></svg>
+        <svg id="svgBot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a68776" fill-opacity="3"
+                d="M0,192L6.2,197.3C12.3,203,25,213,37,213.3C49.2,213,62,203,74,213.3C86.2,224,98,256,111,229.3C123.1,203,135,117,148,106.7C160,96,172,160,185,192C196.9,224,209,224,222,202.7C233.8,181,246,139,258,133.3C270.8,128,283,160,295,160C307.7,160,320,128,332,106.7C344.6,85,357,75,369,64C381.5,53,394,43,406,69.3C418.5,96,431,160,443,197.3C455.4,235,468,245,480,250.7C492.3,256,505,256,517,229.3C529.2,203,542,149,554,122.7C566.2,96,578,96,591,128C603.1,160,615,224,628,213.3C640,203,652,117,665,106.7C676.9,96,689,160,702,181.3C713.8,203,726,181,738,160C750.8,139,763,117,775,117.3C787.7,117,800,139,812,154.7C824.6,171,837,181,849,202.7C861.5,224,874,256,886,250.7C898.5,245,911,203,923,181.3C935.4,160,948,160,960,138.7C972.3,117,985,75,997,48C1009.2,21,1022,11,1034,26.7C1046.2,43,1058,85,1071,101.3C1083.1,117,1095,107,1108,128C1120,149,1132,203,1145,213.3C1156.9,224,1169,192,1182,181.3C1193.8,171,1206,181,1218,192C1230.8,203,1243,213,1255,197.3C1267.7,181,1280,139,1292,133.3C1304.6,128,1317,160,1329,154.7C1341.5,149,1354,107,1366,128C1378.5,149,1391,235,1403,250.7C1415.4,267,1428,213,1434,186.7L1440,160L1440,320L1433.8,320C1427.7,320,1415,320,1403,320C1390.8,320,1378,320,1366,320C1353.8,320,1342,320,1329,320C1316.9,320,1305,320,1292,320C1280,320,1268,320,1255,320C1243.1,320,1231,320,1218,320C1206.2,320,1194,320,1182,320C1169.2,320,1157,320,1145,320C1132.3,320,1120,320,1108,320C1095.4,320,1083,320,1071,320C1058.5,320,1046,320,1034,320C1021.5,320,1009,320,997,320C984.6,320,972,320,960,320C947.7,320,935,320,923,320C910.8,320,898,320,886,320C873.8,320,862,320,849,320C836.9,320,825,320,812,320C800,320,788,320,775,320C763.1,320,751,320,738,320C726.2,320,714,320,702,320C689.2,320,677,320,665,320C652.3,320,640,320,628,320C615.4,320,603,320,591,320C578.5,320,566,320,554,320C541.5,320,529,320,517,320C504.6,320,492,320,480,320C467.7,320,455,320,443,320C430.8,320,418,320,406,320C393.8,320,382,320,369,320C356.9,320,345,320,332,320C320,320,308,320,295,320C283.1,320,271,320,258,320C246.2,320,234,320,222,320C209.2,320,197,320,185,320C172.3,320,160,320,148,320C135.4,320,123,320,111,320C98.5,320,86,320,74,320C61.5,320,49,320,37,320C24.6,320,12,320,6,320L0,320Z">
+            </path>
+        </svg>
     </div>
 
     <div class="scene" id="scene2">
 
-        <div class="dragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <div class="bgdrag1">
-                <img id="card" id="drag1" src="img/card.png" draggable="true" ondragstart="drag(event)">
-            </div>
-            <div class="bgdrag2">
-                <img id="phone" id="drag2" src="img/phone.png" draggable="true" ondragstart="drag(event)">
-            </div>
-            <div class="bgdrag3"> 
-                <img id="qrcode" id="drag3" src="img/qrcode.png" draggable="true" ondragstart="drag(event)">
-            </div>
+
+        <div class="bgdrag1" ondrop="drop1(event)" ondragover="allowDrop(event)">
+            <img id="card" id="drag1" src="img/card.png" draggable="true" ondragstart="drag1(event)" ondragenter="dragEnter1(event)" ondragleave="dragLeave(event)">
+        </div>
+        <div class="bgdrag2" ondrop="drop2(event)" ondragover="allowDrop(event)">
+            <img id="phone" id="drag2" src="img/phone.png" draggable="true" ondragstart="drag2(event)" ondragenter="dragEnter2(event)" ondragleave="dragLeave(event)">
+        </div>
+        <div class="bgdrag3" ondrop="drop3(event)" ondragover="allowDrop(event)">
+            <img id="qrcode" id="drag3" src="img/qrcode.png" draggable="true" ondragstart="drag3(event)" ondragenter="dragEnter3(event)" ondragleave="dragLeave(event)">
         </div>
 
-        <div class="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+        <div class="drop" ondrop="drop1(event)" ondragover="allowDrop(event)">
             <img id="pos" src="img/pos.png">
+        </div>
+
+        <div class="drop" ondrop="drop2(event)" ondragover="allowDrop(event)">
             <img id="nfc" src="img/nfc.png">
+        </div>
+
+        <div class="drop" ondrop="drop3(event)" ondragover="allowDrop(event)">
             <img id="qr" src="img/scan.png">
         </div>
-        
+
+
         <div id="bar-container">
-            <hr class="lines"></hr>
-            
-            <div id="choice1">Drag the card to the POS terminal!</div>
-            <div id="choice2">Drag the phone to the NFC receiver!</div>
-            <div id="choice3">Drag the phone to the QR code scanner!</div>
+            <hr class="lines">
+            </hr>
 
             <span class="dots" id="dot1" onmouseover="timelineHover1()" onmouseout="timelineLeave1()"></span>
             <span class="dots" id="dot2" onmouseover="timelineHover2()" onmouseout="timelineLeave2()"></span>
             <span class="dots" id="dot3" onmouseover="timelineHover3()" onmouseout="timelineLeave3()"></span>
-            <br>
+
+            <div id="choice1">Drag the card to the POS terminal!</div>
+            <div id="choice2">Drag the phone to the NFC receiver!</div>
+            <div id="choice3">Drag the phone to the QR code scanner!</div>
+
             <div class="sentences" id="sentence1">
                 1979
                 <br>
@@ -83,17 +102,15 @@
     <div class="scene" id="scene3">
 
         <h1 id="scene3title">POS Payment</h1>
-        <!-- <img id="posintro" src="img/pos.png"> -->
-        <!-- <button class="goback" onClick = "goBack()">Go Back</button> -->
 
         <img id="posgif">
         <div id="posgifIntro">How does the technology work?</div>
         <div id="posguide">Click the cards to learn more about POS payment!</div>
 
         <div class="wrapper">
-            <div class="accordion_wrap">
+            <div class="accordion_wrap1">
                 <ul>
-                    <li class="walk" id="pos1">
+                    <li class="card1" id="pos1">
                         <div class="accordion_item">
                             <div class="icon">INTRODUCTION</div>
                         </div>
@@ -101,7 +118,9 @@
                             <div class="inner_am">
                                 <div class="title">Introduction</div>
                                 <div class="content">
-                                   POS stands for Point-of-Sales. The history of POS systems began in 1879, with the invention of the cash register. Since then, It's gone through many technological advances, up through today.
+                                    POS stands for Point-of-Sales. The history of POS systems began in 1879, with the
+                                    invention of the cash register. Since then, It's gone through many technological
+                                    advances, up through today.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -109,7 +128,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bicycle" id="pos2">
+                    <li class="card2" id="pos2">
                         <div class="accordion_item">
                             <div class="icon">WORLD'S FIRST CASHIER</div>
                         </div>
@@ -117,7 +136,8 @@
                             <div class="inner_am">
                                 <div class="title">World's First Cashier</div>
                                 <div class="content">
-                                    James Ritty, an Ohio native and saloon owner, invented the first cash register in 1879 with his brother, calling it "Ritty's Incorruptible Cashier." 
+                                    James Ritty, an Ohio native and saloon owner, invented the first cash register in
+                                    1879 with his brother, calling it "Ritty's Incorruptible Cashier."
                                 </div>
                                 <div class="view_more">
                                     <a href="https://en.wikipedia.org/wiki/James_Ritty" target="_blank">View More</a>
@@ -125,7 +145,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bike" id="pos3">
+                    <li class="card3" id="pos3">
                         <div class="accordion_item">
                             <div class="icon">IMPROVEMENTS</div>
                         </div>
@@ -133,7 +153,9 @@
                             <div class="inner_am">
                                 <div class="title">Improvements</div>
                                 <div class="content">
-                                    This included adding a cash drawer and paper roll for receipts. As a result, an increasing number of businesses started to utilize the machine, making it easier to record transactions and manage capital.
+                                    This included adding a cash drawer and paper roll for receipts. As a result, an
+                                    increasing number of businesses started to utilize the machine, making it easier to
+                                    record transactions and manage capital.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -144,9 +166,9 @@
                 </ul>
             </div>
 
-            <div class="accordion_wrap">
+            <div class="accordion_wrap2">
                 <ul>
-                    <li class="walk" id="pos4">
+                    <li class="card1" id="pos4">
                         <div class="accordion_item">
                             <div class="icon">ACCELERATION</div>
                         </div>
@@ -154,7 +176,9 @@
                             <div class="inner_am">
                                 <div class="title">Acceleration</div>
                                 <div class="content">
-                                    Between Gene Mosher’s touchscreen interface invention in the late 1980s and Martin Goodwin and Bob Henry's Microsoft platform POS system, the original cash register got a whole new makeover.
+                                    Between Gene Mosher’s touchscreen interface invention in the late 1980s and Martin
+                                    Goodwin and Bob Henry's Microsoft platform POS system, the original cash register
+                                    got a whole new makeover.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -162,7 +186,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bicycle" id="pos5">
+                    <li class="card2" id="pos5">
                         <div class="accordion_item">
                             <div class="icon">GLOBAL OVERVIEW</div>
                         </div>
@@ -170,7 +194,9 @@
                             <div class="inner_am">
                                 <div class="title">Global Overview</div>
                                 <div class="content">
-                                    The global installed base of POS terminals grew to almost 161 million units in 2019. Market growth is primarily fuelled by the increasing adoption of electronic payments in emerging markets.
+                                    The global installed base of POS terminals grew to almost 161 million units in 2019.
+                                    Market growth is primarily fuelled by the increasing adoption of electronic payments
+                                    in emerging markets.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -178,7 +204,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bike" id="pos6">
+                    <li class="card3" id="pos6">
                         <div class="accordion_item">
                             <div class="icon">FUN FACTS</div>
                         </div>
@@ -186,7 +212,9 @@
                             <div class="inner_am">
                                 <div class="title">Fun Facts</div>
                                 <div class="content">
-                                    The first digit of a credit card indicates what industry issued the card: American Express account numbers start with a 3, Visa accounts with a 4, Mastercard accounts with a 5, and Discover accounts with a 6.
+                                    The first digit of a credit card indicates what industry issued the card: American
+                                    Express account numbers start with a 3, Visa accounts with a 4, Mastercard accounts
+                                    with a 5, and Discover accounts with a 6.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -196,10 +224,10 @@
                     </li>
                 </ul>
             </div>
-                    
+
         </div>
 
-        <button id="goback" onClick = "goBack()">Go Back</button>
+        <button id="goback" onClick="goBack()">Go Back</button>
     </div>
 
     <div class="scene" id="scene4">
@@ -207,12 +235,12 @@
         <!-- <img id="nfcintro" src="img/nfc.png"> -->
         <img id="nfcgif">
         <div id="nfcgifIntro">How does the technology work?</div>
-        <div id="nfcguide">Click the cards or swipe the NFC tags to learn more!</div>
-
+        <div id="nfcguide">Get one card from the wallet and put it on "SWIPE HERE"!</div> 
+        <!-- CLICK THE CARDS ALSO WORK -->
         <div class="wrapper">
-            <div class="accordion_wrap">
+            <div class="accordion_wrap3">
                 <ul>
-                    <li class="walk" id="qr1">
+                    <li class="card1" id="nfc1">
                         <div class="accordion_item">
                             <div class="icon">INTRODUCTION</div>
                         </div>
@@ -220,7 +248,9 @@
                             <div class="inner_am">
                                 <div class="title">Introduction</div>
                                 <div class="content">
-                                    NFC stands for near-field communication. The technology builds on Radio Frequency Identification (RFID), allowing devices in close proximity to each other to easily communicate and share data.
+                                    NFC stands for near-field communication. The technology builds on Radio Frequency
+                                    Identification (RFID), allowing devices in close proximity to each other to easily
+                                    communicate and share data.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -228,7 +258,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bicycle" id="qr2">
+                    <li class="card2" id="nfc2">
                         <div class="accordion_item">
                             <div class="icon">CLASSIFICATION</div>
                         </div>
@@ -236,7 +266,9 @@
                             <div class="inner_am">
                                 <div class="title">Classification</div>
                                 <div class="content">
-                                    Data transmission requires two NFC-enabled devices: a transmitting device and a receiving device. NFC technology works in one of two ways: one-way communication or two-way communication.
+                                    Data transmission requires two NFC-enabled devices: a transmitting device and a
+                                    receiving device. NFC technology works in one of two ways: one-way communication or
+                                    two-way communication.
                                 </div>
                                 <!-- <div class="view_more">
                                     <a href="https://en.wikipedia.org/wiki/James_Ritty" target="_blank">View More</a>
@@ -244,7 +276,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bike" id="qr3">
+                    <li class="card3" id="nfc3">
                         <div class="accordion_item">
                             <div class="icon">HISTORY</div>
                         </div>
@@ -252,7 +284,9 @@
                             <div class="inner_am">
                                 <div class="title">History</div>
                                 <div class="content">
-                                    Charles Walton, patentee of RFID, continued to refine the RFID frequency process, and in 2003, NFC technology was approved as an ISO standard. By 2011, the first NFC mobile apps were being introduced on smartphones.
+                                    Charles Walton, patentee of RFID, continued to refine the RFID frequency process,
+                                    and in 2003, NFC technology was approved as an ISO standard. By 2011, the first NFC
+                                    mobile apps were being introduced on smartphones.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -263,9 +297,9 @@
                 </ul>
             </div>
 
-            <div class="accordion_wrap">
+            <div class="accordion_wrap4">
                 <ul>
-                    <li class="walk" id="qr4">
+                    <li class="card1" id="nfc4">
                         <div class="accordion_item">
                             <div class="icon">COMMON APPS</div>
                         </div>
@@ -273,20 +307,20 @@
                             <div class="inner_am">
                                 <div class="title">Common Apps</div>
                                 <div class="content">
-                                        <br>
-                                        Google Pay
-                                        <br>
-                                        <br>
-                                        Apple Pay
-                                        <br>
-                                        <br>
-                                        Samsung Pay
-                                        <br>
-                                        <br>
-                                        Visa PayWave
-                                        <br>
-                                        <br>
-                                        Mastercard PayPass
+                                    <br>
+                                    Google Pay
+                                    <br>
+                                    <br>
+                                    Apple Pay
+                                    <br>
+                                    <br>
+                                    Samsung Pay
+                                    <br>
+                                    <br>
+                                    Visa PayWave
+                                    <br>
+                                    <br>
+                                    Mastercard PayPass
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -294,7 +328,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bicycle" id="qr5">
+                    <li class="card2" id="nfc5">
                         <div class="accordion_item">
                             <div class="icon">SECURITY</div>
                         </div>
@@ -302,7 +336,9 @@
                             <div class="inner_am">
                                 <div class="title">Security</div>
                                 <div class="content">
-                                    All payments made with NFC are encrypted. Most mobile applications use a method called tokenization to protect emulated card transactions, making it even more difficult for fraudsters to keep up.
+                                    All payments made with NFC are encrypted. Most mobile applications use a method
+                                    called tokenization to protect emulated card transactions, making it even more
+                                    difficult for fraudsters to keep up.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -310,7 +346,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bike" id="qr6">
+                    <li class="card3" id="nfc6">
                         <div class="accordion_item">
                             <div class="icon">FUN FACTS</div>
                         </div>
@@ -318,7 +354,8 @@
                             <div class="inner_am">
                                 <div class="title">Fun Facts</div>
                                 <div class="content">
-                                    NFC smartphones can also be used to read NFC tags -- small NFC chips that can be attached to signs to transfer information -- and to swap music and other data files.
+                                    NFC smartphones can also be used to read NFC tags -- small NFC chips that can be
+                                    attached to signs to transfer information -- and to swap music and other data files.
                                 </div>
                                 <div class="view_more">
                                     Read the tag with your phone!
@@ -328,9 +365,9 @@
                     </li>
                 </ul>
             </div>
-        </div>    
+        </div>
 
-        <button id="goback" onClick = "goBack()">Go Back</button>
+        <button id="goback" onClick="goBack()">Go Back</button>
     </div>
 
     <div class="scene" id="scene5">
@@ -342,9 +379,9 @@
         <div id="qrguide">Click the cards to learn more about QR code payment!</div>
 
         <div class="wrapper">
-            <div class="accordion_wrap">
+            <div class="accordion_wrap5">
                 <ul>
-                    <li class="walk" id="qr1">
+                    <li class="card1" id="qr1">
                         <div class="accordion_item">
                             <div class="icon">INTRODUCTION</div>
                         </div>
@@ -352,7 +389,9 @@
                             <div class="inner_am">
                                 <div class="title">Introduction</div>
                                 <div class="content">
-                                    Quick Response code is a type of matrix barcode and often contains data for a locator, identifier, or tracker that points to a website or application. It uses four standardized encoding modes to store data efficiently.
+                                    Quick Response code is a type of matrix barcode and often contains data for a
+                                    locator, identifier, or tracker that points to a website or application. It uses
+                                    four standardized encoding modes to store data efficiently.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -360,7 +399,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bicycle" id="qr2">
+                    <li class="card2" id="qr2">
                         <div class="accordion_item">
                             <div class="icon">UNTOLD STORY</div>
                         </div>
@@ -368,7 +407,9 @@
                             <div class="inner_am">
                                 <div class="title">Untold Story</div>
                                 <div class="content">
-                                    In the 1960s when Japan entered its high economic growth period, supermarkets selling a wide range of commodities began to spring up in many neighborhoods. The invention of barcodes provided a solution to this problem.
+                                    In the 1960s when Japan entered its high economic growth period, supermarkets
+                                    selling a wide range of commodities began to spring up in many neighborhoods. The
+                                    invention of barcodes provided a solution to this problem.
                                 </div>
                                 <!-- <div class="view_more">
                                     <a href="https://en.wikipedia.org/wiki/James_Ritty" target="_blank">View More</a>
@@ -376,7 +417,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bike" id="qr3">
+                    <li class="card3" id="qr3">
                         <div class="accordion_item">
                             <div class="icon">DEVELOPMENT TEAM</div>
                         </div>
@@ -384,7 +425,8 @@
                             <div class="inner_am">
                                 <div class="title">Development Team</div>
                                 <div class="content">
-                                    Masahiro Hara is in charge of the development of the QR Code and developed QR code with only one other person as his team member.
+                                    Masahiro Hara is in charge of the development of the QR Code and developed QR code
+                                    with only one other person as his team member.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -395,9 +437,9 @@
                 </ul>
             </div>
 
-            <div class="accordion_wrap">
+            <div class="accordion_wrap6">
                 <ul>
-                    <li class="walk" id="qr4">
+                    <li class="card1" id="qr4">
                         <div class="accordion_item">
                             <div class="icon">EARLY ADOPTION</div>
                         </div>
@@ -405,7 +447,9 @@
                             <div class="inner_am">
                                 <div class="title">Early Adoption</div>
                                 <div class="content">
-                                    The QR Code was first adopted by the auto industry for use in their electronic Kanban, which greatly improved their management work efficiency for tasks from production to shipping to the issuing of transaction slips.
+                                    The QR Code was first adopted by the auto industry for use in their electronic
+                                    Kanban, which greatly improved their management work efficiency for tasks from
+                                    production to shipping to the issuing of transaction slips.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -413,7 +457,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bicycle" id="qr5">
+                    <li class="card2" id="qr5">
                         <div class="accordion_item">
                             <div class="icon">RECENT SURGE</div>
                         </div>
@@ -421,7 +465,8 @@
                             <div class="inner_am">
                                 <div class="title">Surge during Pandamic</div>
                                 <div class="content">
-                                    The pandemic has opened doors to massive success for touchless tech. 80% of ordering, checkout, and payment services will become contactless by 2024.
+                                    The pandemic has opened doors to massive success for touchless tech. 80% of
+                                    ordering, checkout, and payment services will become contactless by 2024.
                                 </div>
                                 <!-- <div class="view_more">
                                     View More
@@ -429,7 +474,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bike" id="qr6">
+                    <li class="card3" id="qr6">
                         <div class="accordion_item">
                             <div class="icon">FUN FACTS</div>
                         </div>
@@ -437,7 +482,8 @@
                             <div class="inner_am">
                                 <div class="title">Fun Facts</div>
                                 <div class="content">
-                                    QR codes don’t have to be black and white – As long as the contrast between light and dark areas is great enough for readers to detect.
+                                    QR codes don’t have to be black and white – As long as the contrast between light
+                                    and dark areas is great enough for readers to detect.
                                 </div>
                                 <div class="view_more">
                                     <a href="https://www.qrcode-monkey.com/" target="_blank">Generate yours!</a>
@@ -447,9 +493,9 @@
                     </li>
                 </ul>
             </div>
-                    
+
         </div>
-        <button id="goback" onClick = "goBack()">Go Back</button>
+        <button id="goback" onClick="goBack()">Go Back</button>
 
     </div>
 
@@ -465,99 +511,84 @@
         // var socket = io("http://localhost:8888");
         // console.info(`connected to ${host}`)
 
-        socket.on('data', function(data){
-            // console.log(data);
+        socket.on('data', function (data) {
+            console.log(data);
             // console.log(typeof(data));
 
             var tag_decimal = parseInt(data, 16);
             // console.log(typeof(tag_decimal));
-            
+
             // TAG-HEX-DECIMAL
+            // start-5E627DBF-1583513023
             // sticker-F07AE956-4034586966
             // tag1-7E7F80BF-2122285247
             // tag2-4E4AF4BE-1313535166
             // tag3-CE6B6EBF-3463147199
             // tag4-EE078BF-249591999
-            if (tag_decimal === 2122285247) {
-                console.log("tag 1!");
-                document.getElementById('pos1').classList.add("active");
-                document.getElementById('pos2').classList.remove("active");
-                document.getElementById('pos3').classList.remove("active");
-                document.getElementById('pos4').classList.remove("active");
-            } else if (tag_decimal === 1313535166) {
-                console.log("tag 2!");
-                document.getElementById('pos1').classList.remove("active");
-                document.getElementById('pos2').classList.add("active");
-                document.getElementById('pos3').classList.remove("active");
-                document.getElementById('pos4').classList.remove("active");
-            } else if (tag_decimal === 3463147199) {
-                console.log("tag 3!");
-                document.getElementById('pos1').classList.remove("active");
-                document.getElementById('pos2').classList.remove("active");
-                document.getElementById('pos3').classList.add("active");
-                document.getElementById('pos4').classList.remove("active");
-            } else if (tag_decimal === 249591999) {
-                console.log("tag 3!");
-                document.getElementById('pos1').classList.remove("active");
-                document.getElementById('pos2').classList.remove("active");
-                document.getElementById('pos3').classList.remove("active");
-                document.getElementById('pos4').classList.add("active");
+            // tag5-2EE56EBF-786788031
+            // tag6-8EB973BF-2394518463
+            var startPage = 1; 
+            // how to prevent users from putting start button later
+            if (startPage === 1 && tag_decimal === 1583513023) {
+                console.log("start");
+                document.getElementById('scene1').style.display = "none";
+                document.getElementById('scene2').style.display = "block";
+                startPage = 0;
             }
 
-            // var re = /[0-9A-Fa-f]{6}/g;
-            // var tagid = data;
-            // if (re.test(tagid)) {
-            //     console.log('hex!!!!!');
-            // } else {
-            //     console.log('no!!!');
-            // }
-
-            // var hex =  data.toString();
-            // var ascii = '';
-            // for (var n = 0; n < hex.length; n = n+2) {
-            //     ascii = ascii + String.fromCharCode(parseInt(hex.substr(n, 2), 16));
-            // }
-
-            // console.log("ascii is: " + ascii);
-
-            // var re = /[0-9A-Fa-f]{6}/g;
-            // var tagid = ascii;
-            // if (re.test(tagid)) {
-            //     console.log('hex!!!!!');
-            // } else {
-            //     console.log('no!!!');
-            // }
-
-            // var tagid1_hex = "F07AE956";
-
-            // if (data == )
-
-            // console.log("F07AE956");
-            // document.getElementById('test').style.opacity = data/100;
-            // document.getElementById('posgifIntro').innerHTML = data;
-
-            // if (tagid !== "EE078BF") {
-            //     // document.getElementsByClassName('walk').classList.add("active");
-            //     console.log("hi!");
-            // } 
-            
-
-        
-            // var li_items = document.querySelectorAll(".accordion_wrap ul li");
-            // var ul = document.querySelector(".accordion_wrap ul");
-
-            // li_items.forEach(function(item){
-            //     item.addEventListener("click", function(){
-            //         li_items.forEach(function(item){
-            //             item.classList.remove("active");
-            //         })
-            //         item.classList.add("active");
-            //     });
-            // });
+            if (tag_decimal === 2122285247) {
+                console.log("tag 1!");
+                document.getElementById('nfc1').classList.add("active");
+                document.getElementById('nfc2').classList.remove("active");
+                document.getElementById('nfc3').classList.remove("active");
+                document.getElementById('nfc4').classList.remove("active");
+                document.getElementById('nfc5').classList.remove("active");
+                document.getElementById('nfc6').classList.remove("active");
+            } else if (tag_decimal === 1313535166) {
+                console.log("tag 2!");
+                document.getElementById('nfc1').classList.remove("active");
+                document.getElementById('nfc2').classList.add("active");
+                document.getElementById('nfc3').classList.remove("active");
+                document.getElementById('nfc4').classList.remove("active");
+                document.getElementById('nfc5').classList.remove("active");
+                document.getElementById('nfc6').classList.remove("active");
+            } else if (tag_decimal === 3463147199) {
+                console.log("tag 3!");
+                document.getElementById('nfc1').classList.remove("active");
+                document.getElementById('nfc2').classList.remove("active");
+                document.getElementById('nfc3').classList.add("active");
+                document.getElementById('nfc4').classList.remove("active");
+                document.getElementById('nfc5').classList.remove("active");
+                document.getElementById('nfc6').classList.remove("active");
+            } else if (tag_decimal === 249591999) {
+                console.log("tag 4!");
+                document.getElementById('nfc1').classList.remove("active");
+                document.getElementById('nfc2').classList.remove("active");
+                document.getElementById('nfc3').classList.remove("active");
+                document.getElementById('nfc4').classList.add("active");
+                document.getElementById('nfc5').classList.remove("active");
+                document.getElementById('nfc6').classList.remove("active");
+            } else if (tag_decimal === 786788031) {
+                console.log("tag 5!");
+                document.getElementById('nfc1').classList.remove("active");
+                document.getElementById('nfc2').classList.remove("active");
+                document.getElementById('nfc3').classList.remove("active");
+                document.getElementById('nfc4').classList.remove("active");
+                document.getElementById('nfc5').classList.add("active");
+                document.getElementById('nfc6').classList.remove("active");
+            } else if (tag_decimal === 2394518463) {
+                console.log("tag 6!");
+                document.getElementById('nfc1').classList.remove("active");
+                document.getElementById('nfc2').classList.remove("active");
+                document.getElementById('nfc3').classList.remove("active");
+                document.getElementById('nfc4').classList.remove("active");
+                document.getElementById('nfc5').classList.remove("active");
+                document.getElementById('nfc6').classList.add("active");
+            }
 
         });
 
-    
+
 
     </script>
 
