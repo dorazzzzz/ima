@@ -1,15 +1,6 @@
-var cs = 1;
-
 function nextScene() {
-	if (cs === 5) {
-		document.getElementById("scene5").style.display = "none";
-		cs = 1;
-		document.getElementById("scene1").style.display = "block";
-	} else if (cs < 5){
-		document.getElementById("scene" + cs).style.display = "none";
-		document.getElementById("scene" + (cs + 1) ).style.display = "block";
-		cs = cs + 1;
-	}
+    document.getElementById("scene1").style.display = "none";
+    document.getElementById("scene2").style.display = "block";
 }
 
 $(function () {
@@ -53,7 +44,11 @@ function goBack() {
     document.getElementById('nfc4').classList.remove("active");
     document.getElementById('nfc5').classList.remove("active");
     document.getElementById('nfc6').classList.remove("active");
+}
 
+function backtostart() {
+    document.getElementById("scene2").style.display = "none";
+    document.getElementById("scene1").style.display = "block";
 }
 
 var card;
@@ -249,7 +244,7 @@ function drop3(ev) {
 function timelineHover1() {
     document.getElementById('dot1').style.backgroundColor = "#a68776";
     document.getElementById('sentence1').style.color = "#a68776";
-    document.getElementById('choice1').style.color = "#a68776";
+    document.getElementById('choice1').style.color = "#735443";
     
     document.getElementById('sentence1').style.display = "block";
     document.getElementById('choice1').style.display = "block";
@@ -285,7 +280,7 @@ function timelineLeave1() {
 function timelineHover2() {
     document.getElementById('dot2').style.backgroundColor = "#a68776";
     document.getElementById('sentence2').style.color = "#a68776";
-    document.getElementById('choice2').style.color = "#a68776";
+    document.getElementById('choice2').style.color = "#735443";
 
     document.getElementById('sentence2').style.display = "block";
     document.getElementById('choice2').style.display = "block";
@@ -321,7 +316,7 @@ function timelineLeave2() {
 function timelineHover3() {
     document.getElementById('dot3').style.backgroundColor = "#a68776";
     document.getElementById('sentence3').style.color = "#a68776";
-    document.getElementById('choice3').style.color = "#a68776";
+    document.getElementById('choice3').style.color = "#735443";
 
     document.getElementById('sentence3').style.display = "block";
     document.getElementById('choice3').style.display = "block";

@@ -74,6 +74,13 @@ a {
 
 /* scene2 */
 
+#backtostart {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    border-radius: 5rem;
+}
+
 #scene2title {
     width: 100%;
     text-align: center;
@@ -142,7 +149,7 @@ a {
     position: relative;
     text-align: center;
     left: 3%;
-    top: -135px;
+    top: -185px;
     font-size: 25px;
     width: 25%;
     display: none;
@@ -154,8 +161,8 @@ a {
     color: #f2e9d8;
     position: relative;
     text-align: center;
-    left: 37%;
-    top: -135px;
+    left: 36%;
+    top: -185px;
     font-size: 25px;
     width: 25%;
     display: none;
@@ -168,15 +175,15 @@ a {
     position: relative;
     text-align: center;
     left: 69%;
-    top: -135px;
+    top: -185px;
     font-size: 25px;
     width: 25%;
     display: none;
 }
 
 .dots {
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
     /* background-color: #a68776; */
     border-radius: 50%;
     display: inline-block;
@@ -185,18 +192,18 @@ a {
 }
 
 #dot1 {
-    left: 14%;
-    top: -30px; 
+    left: 13%;
+    top: -45px; 
 }
 
 #dot2 {
-    left: 44.5%;
-    top: -30px;
+    left: 41%;
+    top: -45px;
 }
 
 #dot3 {
-    left: 74.5%;
-    top: -30px;
+    left: 70%;
+    top: -45px;
 }
 
 .sentences {
@@ -209,13 +216,13 @@ a {
 }
 
 #sentence1 {
-    left: 3%;
+    left: 2.7%;
     top: -50px;
     display: none;
 }
 
 #sentence2 {
-    left: 36.3%;
+    left: 35.5%;
     top: -50px;
     display: none;
 }
@@ -233,7 +240,7 @@ a {
     height: 2px;
     /* position: relative; */
     display: block;
-    margin-top: 30%;
+    margin-top: 32%;
     /* top: 50%; */
 }
 
@@ -671,7 +678,7 @@ a {
 	padding: 5px;
 	background: #735443;
 	color: #d9bba9;
-	width: 125px;
+	width: 150px;
 	text-align: center;
 	border-radius: 3px;
 	cursor: pointer;
@@ -696,7 +703,7 @@ a {
 #nfcgif {
     position: absolute;
     width: 90%;
-    left: -22%;
+    left: -17%;
     top: 2%;
 }
 
@@ -715,13 +722,13 @@ a {
 #nfcguide {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    font-size: 30px;
-    color: #a68776;
+    font-size: 35px;
+    color: #735443;
     position: absolute;
     text-align: center;
     left: 5%;
-    top: 70%;
-    width: 45%;
+    top: 75%;
+    width: 50%;
 }
 
 /* scene 5 */
@@ -754,13 +761,13 @@ a {
 #qrguide {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    font-size: 30px;
-    color: #a68776;
+    font-size: 35px;
+    color: #735443;
     position: absolute;
     text-align: center;
-    left: 9%;
+    left: 6%;
     top: 70%;
-    width: 40%;
+    width: 50%;
 }
 
 #posgifIntro {
@@ -778,18 +785,18 @@ a {
 #posgif {
     position: absolute;
     width: 70%;
-    left: -13%;
+    left: -12%;
     top: 10%;
 }
 
 #posguide {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    font-size: 30px;
-    color: #a68776;
+    font-size: 35px;
+    color: #735443;
     position: absolute;
     text-align: center;
-    left: 11%;
+    left: 9%;
     top: 70%;
-    width: 40%;
+    width: 45%;
 }
