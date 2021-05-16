@@ -58,6 +58,9 @@ a {
     width: 95%;
 }
 
+#buttondiv {
+    display: block;
+}
 #start {
     position: absolute;
     top: 67%;
@@ -139,6 +142,7 @@ a {
 }
 
 #bar-container {
+    width: 100%;
     position: relative;
 }
 
@@ -202,7 +206,7 @@ a {
 }
 
 #dot3 {
-    left: 70%;
+    right: 0%;
     top: -45px;
 }
 

@@ -511,6 +511,7 @@
     <script>
         let host = "http://localhost:8888";
         var socket = io(host);
+        var startPage = 1; 
         // var socket = io("http://localhost:8888");
         // console.info(`connected to ${host}`)
 
@@ -524,22 +525,24 @@
             // TAG-HEX-DECIMAL
             // start-5E627DBF-1583513023
             // sticker-F07AE956-4034586966
-            // tag1-7E7F80BF-2122285247
+
+
+            // tag1-CD804319-3447735065
             // tag2-4E4AF4BE-1313535166
-            // tag3-CE6B6EBF-3463147199
-            // tag4-EE078BF-249591999
+            // tag3-EE3F3BE-249820094
+            // tag4-F07AE956-4034586966
             // tag5-2EE56EBF-786788031
             // tag6-8EB973BF-2394518463
-            var startPage = 1; 
+            console.log(startPage);
             // how to prevent users from putting start button later
             if (startPage === 1 && tag_decimal === 1583513023) {
-                console.log("start");
+                console.log(startPage);
                 document.getElementById('scene1').style.display = "none";
                 document.getElementById('scene2').style.display = "block";
                 startPage = 0;
             }
 
-            if (tag_decimal === 2122285247) {
+            if (tag_decimal === 3447735065) {
                 console.log("tag 1!");
                 document.getElementById('nfc1').classList.add("active");
                 document.getElementById('nfc2').classList.remove("active");
@@ -555,7 +558,7 @@
                 document.getElementById('nfc4').classList.remove("active");
                 document.getElementById('nfc5').classList.remove("active");
                 document.getElementById('nfc6').classList.remove("active");
-            } else if (tag_decimal === 3463147199) {
+            } else if (tag_decimal === 249820094) {
                 console.log("tag 3!");
                 document.getElementById('nfc1').classList.remove("active");
                 document.getElementById('nfc2').classList.remove("active");
@@ -563,7 +566,7 @@
                 document.getElementById('nfc4').classList.remove("active");
                 document.getElementById('nfc5').classList.remove("active");
                 document.getElementById('nfc6').classList.remove("active");
-            } else if (tag_decimal === 249591999) {
+            } else if (tag_decimal === 4034586966) {
                 console.log("tag 4!");
                 document.getElementById('nfc1').classList.remove("active");
                 document.getElementById('nfc2').classList.remove("active");

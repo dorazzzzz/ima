@@ -1,3 +1,13 @@
+function checkurl() {
+    // console.log("The URL of this page is: " + window.location.hash);
+    if (window.location.hash === '#nfc') {
+        document.getElementById("buttondiv").style.display = "none";
+    }
+}
+
+checkurl();
+
+
 function nextScene() {
     document.getElementById("scene1").style.display = "none";
     document.getElementById("scene2").style.display = "block";
