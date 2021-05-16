@@ -61,6 +61,16 @@ a {
 #buttondiv {
     display: block;
 }
+
+#startGuide {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #d9bba9;
+    margin-top: 3%;
+}
+
 #start {
     position: absolute;
     top: 67%;
@@ -206,7 +216,7 @@ a {
 }
 
 #dot3 {
-    right: 0%;
+    left: 70%;
     top: -45px;
 }
 
@@ -264,7 +274,7 @@ a {
 
 .wrapper{
 	width: 900px;
-	margin-left: 47%;
+	margin-left: 49%;
     margin-top: 5%;
 }
 
@@ -686,7 +696,7 @@ a {
 	text-align: center;
 	border-radius: 3px;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 13px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -721,6 +731,18 @@ a {
     left: 13%;
     top: 22%;
     width: 30%;
+}
+
+#nfcguide_nfc {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #735443;
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    top: 75%;
+    width: 50%;
 }
 
 #nfcguide {
@@ -772,6 +794,7 @@ a {
     left: 6%;
     top: 70%;
     width: 50%;
+    display: block;
 }
 
 #posgifIntro {

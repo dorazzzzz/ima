@@ -26,6 +26,7 @@
         <div id="buttondiv">
             <button onClick="nextScene()" id="start"> Start </button>
         </div>
+        <div id="startGuide">Put the START tag to "SWIPE HERE" to start...</div>
         <!-- <svg id="svgBot"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="1" d="M0,128L21.8,149.3C43.6,171,87,213,131,192C174.5,171,218,85,262,69.3C305.5,53,349,107,393,106.7C436.4,107,480,53,524,42.7C567.3,32,611,64,655,80C698.2,96,742,96,785,106.7C829.1,117,873,139,916,154.7C960,171,1004,181,1047,154.7C1090.9,128,1135,64,1178,37.3C1221.8,11,1265,21,1309,42.7C1352.7,64,1396,96,1418,112L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg> -->
         <!-- <svg id="svgBot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d0d0d" fill-opacity="1" d="M0,224L36.9,32L73.8,288L110.8,64L147.7,160L184.6,256L221.5,160L258.5,32L295.4,0L332.3,128L369.2,192L406.2,320L443.1,224L480,128L516.9,256L553.8,192L590.8,192L627.7,160L664.6,96L701.5,128L738.5,320L775.4,96L812.3,224L849.2,160L886.2,160L923.1,0L960,224L996.9,0L1033.8,224L1070.8,32L1107.7,32L1144.6,64L1181.5,160L1218.5,320L1255.4,32L1292.3,128L1329.2,288L1366.2,256L1403.1,64L1440,160L1440,320L1403.1,320L1366.2,320L1329.2,320L1292.3,320L1255.4,320L1218.5,320L1181.5,320L1144.6,320L1107.7,320L1070.8,320L1033.8,320L996.9,320L960,320L923.1,320L886.2,320L849.2,320L812.3,320L775.4,320L738.5,320L701.5,320L664.6,320L627.7,320L590.8,320L553.8,320L516.9,320L480,320L443.1,320L406.2,320L369.2,320L332.3,320L295.4,320L258.5,320L221.5,320L184.6,320L147.7,320L110.8,320L73.8,320L36.9,320L0,320Z"></path></svg> -->
         <!-- <svg id="svgBot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a68776" fill-opacity="3" d="M0,96L36.9,128L73.8,128L110.8,192L147.7,320L184.6,160L221.5,32L258.5,64L295.4,192L332.3,32L369.2,128L406.2,288L443.1,128L480,128L516.9,192L553.8,96L590.8,288L627.7,160L664.6,192L701.5,288L738.5,32L775.4,64L812.3,96L849.2,96L886.2,32L923.1,192L960,64L996.9,96L1033.8,224L1070.8,96L1107.7,192L1144.6,64L1181.5,192L1218.5,192L1255.4,160L1292.3,0L1329.2,64L1366.2,160L1403.1,0L1440,128L1440,320L1403.1,320L1366.2,320L1329.2,320L1292.3,320L1255.4,320L1218.5,320L1181.5,320L1144.6,320L1107.7,320L1070.8,320L1033.8,320L996.9,320L960,320L923.1,320L886.2,320L849.2,320L812.3,320L775.4,320L738.5,320L701.5,320L664.6,320L627.7,320L590.8,320L553.8,320L516.9,320L480,320L443.1,320L406.2,320L369.2,320L332.3,320L295.4,320L258.5,320L221.5,320L184.6,320L147.7,320L110.8,320L73.8,320L36.9,320L0,320Z"></path></svg> -->
@@ -237,8 +238,9 @@
         <!-- <img id="nfcintro" src="img/nfc.png"> -->
         <img id="nfcgif">
         <div id="nfcgifIntro">How does the technology work?</div>
-        <div id="nfcguide">Take one card from the wallet on the table and put it on "SWIPE HERE" area on the box &#8595;
-        </div> 
+        <div id="nfcguide_nfc">Take one card from the wallet on the table and put it on "SWIPE HERE" area on the box &#8595;</div>
+        <div id="nfcguide">Click the cards to learn more about NFC payment &#8594; </div>
+
         <!-- CLICK THE CARDS ALSO WORK -->
         <div class="wrapper">
             <div class="accordion_wrap3">
@@ -357,11 +359,10 @@
                             <div class="inner_am">
                                 <div class="title">Fun Facts</div>
                                 <div class="content">
-                                    NFC smartphones can also be used to read NFC tags -- small NFC chips that can be
-                                    attached to signs to transfer information -- and to swap music and other data files.
+                                    NFC smartphones can read NFC tags, set automation to run on personal devices. iPhone: Shortcuts - Automation - Create Personal Automation - NFC
                                 </div>
                                 <div class="view_more">
-                                    Put this tag close to the <i>top</i> of your phone and check!
+                                    Pick a card from the wallet and set your personal automation!
                                 </div>
                             </div>
                         </div>

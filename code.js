@@ -2,6 +2,8 @@ function checkurl() {
     // console.log("The URL of this page is: " + window.location.hash);
     if (window.location.hash === '#nfc') {
         document.getElementById("buttondiv").style.display = "none";
+    } else {
+        document.getElementById("startGuide").style.display = "none";
     }
 }
 
@@ -402,6 +404,18 @@ ul2.addEventListener("mouseleave", function(){
 });
 
 // nfc
+
+function checkurl2() {
+    // console.log("The URL of this page is: " + window.location.hash);
+    if (window.location.hash === '#nfc') {
+        document.getElementById("nfcguide").style.display = "none";
+    } else {
+        document.getElementById("nfcguide_nfc").style.display = "none";
+    }
+}
+
+checkurl2();
+
 var li_items3 = document.querySelectorAll(".accordion_wrap3 ul li");
 // console.log(li_items1);
 var ul3 = document.querySelector(".accordion_wrap3 ul");
@@ -530,6 +544,21 @@ $(function () {
         }
     });
 
+    $('#nfcguide_nfc').textillate({
+        loop: true,
+        in:{
+            effect: "tada",
+            delayScale: 30, 
+            delay: 200,
+            sync: true, 
+        },
+        out:{
+            effect: "tada",
+            delayScale: 10, 
+            delay: 200,
+            sync: true, 
+        }
+    });
 
 })
 
