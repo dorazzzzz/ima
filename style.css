@@ -134,14 +134,14 @@ a {
     width: 15%;
     position: absolute;
     top: 13%;
-    left: 47%;
+    left: 49%;
 }
 
 #phone {
     width: 11%;
     position: absolute;
     top: 18%;
-    left: 35%;
+    left: 37%;
     cursor: pointer;
 }
 
@@ -149,7 +149,7 @@ a {
     width: 7%;
     position: absolute;
     top: 18%;
-    left: 70%;
+    left: 73%;
     cursor: pointer;
 }
 
@@ -157,115 +157,109 @@ a {
     width: 15%;
     position: absolute;
     top: 13%;
-    left: 78%;
+    left: 81%;
 }
 
-#bar-container {
-    width: 100%;
+.columns {
+    margin-top: 32%;
+    padding-top: 20px;
+    border-top: 2px #a68776 solid; 
+  
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+  
+.column {
+    width: 30%;
+}
+  
+.column::before {
+    display: block;
     position: relative;
+    content: "";
+    border: 2px #a68776 solid; 
+    border-radius: 50%;
+    top: -50px;
+    width: 60px;
+    height: 60px;
+    margin: auto;
 }
-
+  
+.column h2 {
+    text-align: center;
+}
+  
+.column .description {
+    text-align: center;
+    display: none;
+}
+  
+.column:hover .description {
+    display: inherit;
+}
+  
+.column:hover::before {
+    background:#a68776;
+}
+  
 #choice1 {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    color: #f2e9d8;
+    color: #735443;
     position: relative;
     text-align: center;
     left: 3%;
-    top: -185px;
+    top: -175px;
     font-size: 25px;
-    width: 25%;
-    display: none;
+    width: 100%;
 }
 
 #choice2 {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    color: #f2e9d8;
+    color: #735443;
     position: relative;
     text-align: center;
-    left: 36%;
-    top: -185px;
+    left: 3%;
+    top: -175px;
     font-size: 25px;
-    width: 25%;
-    display: none;
+    width: 100%;
 }
 
 #choice3 {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    color: #f2e9d8;
+    color: #735443;
     position: relative;
     text-align: center;
-    left: 69%;
-    top: -185px;
+    left: 3%;
+    top: -175px;
     font-size: 25px;
-    width: 25%;
-    display: none;
-}
-
-.dots {
-    height: 70px;
-    width: 70px;
-    /* background-color: #a68776; */
-    border-radius: 50%;
-    display: inline-block;
-    border: 2px #a68776 solid; 
-    position: relative;
-}
-
-#dot1 {
-    left: 13%;
-    top: -45px; 
-}
-
-#dot2 {
-    left: 41%;
-    top: -45px;
-}
-
-#dot3 {
-    left: 70%;
-    top: -45px;
+    width: 100%;
 }
 
 .sentences {
-    color: #f2e9d8;
+    color: #a68776;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     position: relative;
-    width: 25%;
+    width: 100%;
 }
 
 #sentence1 {
-    left: 2.7%;
     top: -50px;
-    display: none;
 }
 
 #sentence2 {
-    left: 35.5%;
     top: -50px;
-    display: none;
 }
 
 #sentence3 {
-    left: 69%;
     top: -50px;
-    display: none;
 }
 
-.lines {
-    border-width: 0;
-    background-color: #a68776;
-    color: #a68776;
-    height: 2px;
-    /* position: relative; */
-    display: block;
-    margin-top: 32%;
-    /* top: 50%; */
-}
 
 /* scene 3 */
 /* posintroscene */

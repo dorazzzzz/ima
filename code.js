@@ -254,13 +254,6 @@ function drop3(ev) {
 }
 
 function timelineHover1() {
-    document.getElementById('dot1').style.backgroundColor = "#a68776";
-    document.getElementById('sentence1').style.color = "#a68776";
-    document.getElementById('choice1').style.color = "#735443";
-    
-    document.getElementById('sentence1').style.display = "block";
-    document.getElementById('choice1').style.display = "block";
-
     $(function () {
         $('#choice1').textillate({
             loop: true,
@@ -280,23 +273,7 @@ function timelineHover1() {
     })
 }
 
-function timelineLeave1() {
-    document.getElementById("dot1").style.backgroundColor = "";
-    document.getElementById('sentence1').style.color = "#f2e9d8";
-    document.getElementById('choice1').style.color = "#f2e9d8";
-
-    document.getElementById('sentence1').style.display = "none";
-    document.getElementById('choice1').style.display = "none";
-}
-
 function timelineHover2() {
-    document.getElementById('dot2').style.backgroundColor = "#a68776";
-    document.getElementById('sentence2').style.color = "#a68776";
-    document.getElementById('choice2').style.color = "#735443";
-
-    document.getElementById('sentence2').style.display = "block";
-    document.getElementById('choice2').style.display = "block";
-
     $(function () {
         $('#choice2').textillate({
             loop: true,
@@ -316,23 +293,8 @@ function timelineHover2() {
     })    
 }
 
-function timelineLeave2() {
-    document.getElementById("dot2").style.backgroundColor = "";
-    document.getElementById('sentence2').style.color = "#f2e9d8";
-    document.getElementById('choice2').style.color = "#f2e9d8";
-
-    document.getElementById('sentence2').style.display = "none";
-    document.getElementById('choice2').style.display = "none";
-}
 
 function timelineHover3() {
-    document.getElementById('dot3').style.backgroundColor = "#a68776";
-    document.getElementById('sentence3').style.color = "#a68776";
-    document.getElementById('choice3').style.color = "#735443";
-
-    document.getElementById('sentence3').style.display = "block";
-    document.getElementById('choice3').style.display = "block";
-
     $(function () {
         $('#choice3').textillate({
             loop: true,
@@ -351,18 +313,6 @@ function timelineHover3() {
         });
     })
 }
-
-function timelineLeave3() {
-    document.getElementById("dot3").style.backgroundColor = "";
-    document.getElementById('sentence3').style.color = "#f2e9d8";
-    document.getElementById('choice3').style.color = "#f2e9d8";
-
-    // document.getElementById('dot3').style.display = "none";
-    document.getElementById('sentence3').style.display = "none";
-    document.getElementById('choice3').style.display = "none";
-}
-
-
 
 // posintro
 var li_items1 = document.querySelectorAll(".accordion_wrap1 ul li");

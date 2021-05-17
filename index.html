@@ -65,36 +65,33 @@
             <img id="qr" src="img/scan.png">
         </div>
 
-
-        <div id="bar-container">
-            <hr class="lines">
-            </hr>
-
-            <span class="dots" id="dot1" onmouseover="timelineHover1()" onmouseout="timelineLeave1()"></span>
-            <span class="dots" id="dot2" onmouseover="timelineHover2()" onmouseout="timelineLeave2()"></span>
-            <span class="dots" id="dot3" onmouseover="timelineHover3()" onmouseout="timelineLeave3()"></span>
-
-            <div id="choice1">Drag the card to the POS terminal!</div>
-            <div id="choice2">Drag the phone to the NFC receiver!</div>
-            <div id="choice3">Drag the phone to the QR code scanner!</div>
-
-            <div class="sentences" id="sentence1">
-                1979
-                <br>
-                <br>
-                The first POS terminal was introduced by Visa in 1979.
+        <div class="columns">
+            <div class="column" onmouseover="timelineHover1()">
+                <div class="description" id="choice1">Drag the card to the POS terminal!</div>
+                <div class="description sentences" id="sentence1">
+                    1979
+                    <br>
+                    <br>
+                    The first POS terminal was introduced by Visa in 1979.
+                </div>
             </div>
-            <div class="sentences" id="sentence2">
-                1983
-                <br>
-                <br>
-                RFID, the technology on which NFC is based on, was invented in 1983 by Charles Walton.
+            <div class="column" onmouseover="timelineHover2()">
+                <div class="description" id="choice2">Drag the phone to the NFC receiver!</div>
+                <div class="description sentences" id="sentence2">
+                    1983
+                    <br>
+                    <br>
+                    RFID, the technology on which NFC is based on, was invented in 1983 by Charles Walton.
+                </div>
             </div>
-            <div class="sentences" id="sentence3">
-                1994
-                <br>
-                <br>
-                QR code was invented in 1994 by Denso Wave, a Japanese automotive components manufacturer.
+            <div class="column" onmouseover="timelineHover3()">
+                <div class="description" id="choice3">Drag the phone to the QR code scanner!</div>
+                <div class="description sentences" id="sentence3">
+                    1994
+                    <br>
+                    <br>
+                    QR code was invented in 1994 by Denso Wave, a Japanese automotive components manufacturer.
+                </div>
             </div>
         </div>
 
@@ -127,9 +124,6 @@
                                     invention of the cash register. Since then, It's gone through many technological
                                     advances, up through today.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -162,9 +156,6 @@
                                     increasing number of businesses started to utilize the machine, making it easier to
                                     record transactions and manage capital.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -185,9 +176,6 @@
                                     Goodwin and Bob Henry's Microsoft platform POS system, the original cash register
                                     got a whole new makeover.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -203,9 +191,6 @@
                                     Market growth is primarily fuelled by the increasing adoption of electronic payments
                                     in emerging markets.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -221,9 +206,6 @@
                                     Express account numbers start with a 3, Visa accounts with a 4, Mastercard accounts
                                     with a 5, and Discover accounts with a 6.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -237,7 +219,6 @@
 
     <div class="scene" id="scene4">
         <h1 id="scene4title">NFC Payment</h1>
-        <!-- <img id="nfcintro" src="img/nfc.png"> -->
         <img id="nfcgif">
         <div id="nfcgifIntro">How does the technology work?</div>
         <div id="nfcguide_nfc">Take one card from the wallet on the table and put it on "SWIPE HERE" area on the box &#8595;</div>
@@ -259,9 +240,6 @@
                                     Identification (RFID), allowing devices in close proximity to each other to easily
                                     communicate and share data.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -277,9 +255,6 @@
                                     receiving device. NFC technology works in one of two ways: one-way communication or
                                     two-way communication.
                                 </div>
-                                <!-- <div class="view_more">
-                                    <a href="https://en.wikipedia.org/wiki/James_Ritty" target="_blank">View More</a>
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -295,9 +270,6 @@
                                     and in 2003, NFC technology was approved as an ISO standard. By 2011, the first NFC
                                     mobile apps were being introduced on smartphones.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -329,9 +301,6 @@
                                     <br>
                                     Mastercard PayPass
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -347,9 +316,6 @@
                                     called tokenization to protect emulated card transactions, making it even more
                                     difficult for fraudsters to keep up.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -378,7 +344,6 @@
 
     <div class="scene" id="scene5">
         <h1 id="scene5title">QR Code Payment</h1>
-        <!-- <img id="qrintro" src="img/scan.png"> -->
 
         <img id="qrgif">
         <div id="qrgifIntro">How does the technology work?</div>
@@ -399,9 +364,6 @@
                                     locator, identifier, or tracker that points to a website or application. It uses
                                     four standardized encoding modes to store data efficiently.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -417,9 +379,6 @@
                                     selling a wide range of commodities began to spring up in many neighborhoods. The
                                     invention of barcodes provided a solution to this problem.
                                 </div>
-                                <!-- <div class="view_more">
-                                    <a href="https://en.wikipedia.org/wiki/James_Ritty" target="_blank">View More</a>
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -434,9 +393,6 @@
                                     Masahiro Hara is in charge of the development of the QR Code and developed QR code
                                     with only one other person as his team member.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -457,9 +413,6 @@
                                     Kanban, which greatly improved their management work efficiency for tasks from
                                     production to shipping to the issuing of transaction slips.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -474,9 +427,6 @@
                                     The pandemic has opened doors to massive success for touchless tech. 80% of
                                     ordering, checkout, and payment services will become contactless by 2024.
                                 </div>
-                                <!-- <div class="view_more">
-                                    View More
-                                </div> -->
                             </div>
                         </div>
                     </li>
