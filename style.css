@@ -34,7 +34,7 @@ a {
 #svgBot {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     z-index: -1;
 }
 
@@ -68,13 +68,13 @@ a {
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     color: #d9bba9;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 #start {
     position: absolute;
     top: 67%;
-    left: 47%;
+    left: 48%;
     border-radius: 4rem;
 }
 
@@ -83,6 +83,15 @@ a {
     top: 92%;
     left: 1%;
     border-radius: 5rem;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+    position: absolute;
+    top: 97%;
+    left: 0.5%;
 }
 
 /* scene2 */

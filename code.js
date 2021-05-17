@@ -1,7 +1,7 @@
 function checkurl() {
     // console.log("The URL of this page is: " + window.location.hash);
     if (window.location.hash === '#nfc') {
-        document.getElementById("buttondiv").style.display = "none";
+        // document.getElementById("buttondiv").style.display = "none";
     } else {
         document.getElementById("startGuide").style.display = "none";
     }
