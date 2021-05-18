@@ -1,5 +1,5 @@
 // ***
-// Written with reference to https://youtu.be/gQYsUjT-IBo
+// Written with reference to https://youtu.be/gQYsUjT-IBo &&  https://github.com/codeadamca/arduino-to-nodejs
 
 var http = require('http');
 var fs = require('fs'); //filesystem
