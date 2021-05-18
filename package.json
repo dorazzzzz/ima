@@ -1,6 +1,3 @@
-// ***
-// Written with reference to https://youtu.be/gQYsUjT-IBo
-
 {
 	"name": "basic-socket",
 	"version": "0.0.1",
@@ -10,4 +7,3 @@
 		"socket.io": "^2.0.4"
 	}
 }
-// ***
