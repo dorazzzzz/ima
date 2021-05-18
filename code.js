@@ -59,6 +59,8 @@ function goBack() {
 }
 
 function backtostart() {
+    startPage = 1;
+
     document.getElementById("scene2").style.display = "none";
     document.getElementById("scene1").style.display = "block";
 }
