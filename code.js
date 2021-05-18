@@ -9,7 +9,6 @@ function checkurl() {
 
 checkurl();
 
-
 function nextScene() {
     document.getElementById("scene1").style.display = "none";
     document.getElementById("scene2").style.display = "block";
@@ -110,24 +109,6 @@ function drag3(ev) {
     }
 }
 
-// function dragEnter(ev) {
-//     ev.dataTransfer.setData("dragImage",ev.target.id);
-//     console.log(ev.target.id);
-
-//     if (ev.target.id === "card") {
-//         document.getElementById("pos").style.borderRadius = "20%";
-//         document.getElementById("pos").style.backgroundColor = "#d9bba9";
-//         document.getElementById("pos").style.opacity = "0.5";
-//     } else if (ev.target.id === "phone") {
-//         document.getElementById("nfc").style.borderRadius = "20%";
-//         document.getElementById("nfc").style.backgroundColor = "#d9bba9";
-//         document.getElementById("nfc").style.opacity = "0.5";
-//     } else if (ev.target.id === "qrcode") {
-//         document.getElementById("qr").style.borderRadius = "20%";
-//         document.getElementById("qr").style.backgroundColor = "#d9bba9";
-//         document.getElementById("qr").style.opacity = "0.5";
-//     }
-// }
 
 function dragLeave(ev) {
     if (ev.target.id === "card") {
@@ -316,6 +297,9 @@ function timelineHover3() {
     })
 }
 
+// ***
+// cards effect is written with reference to https://github.com/codingmarket07/Horizontal-Accordion-Menu
+
 // posintro
 var li_items1 = document.querySelectorAll(".accordion_wrap1 ul li");
 // console.log(li_items1);
@@ -354,9 +338,10 @@ ul2.addEventListener("mouseleave", function(){
 		item.classList.remove("active");
 	})
 });
+// ***
+
 
 // nfc
-
 function checkurl2() {
     // console.log("The URL of this page is: " + window.location.hash);
     if (window.location.hash === '#nfc') {
@@ -367,6 +352,9 @@ function checkurl2() {
 }
 
 checkurl2();
+
+// ***
+// cards effect is written with reference to https://github.com/codingmarket07/Horizontal-Accordion-Menu
 
 var li_items3 = document.querySelectorAll(".accordion_wrap3 ul li");
 // console.log(li_items1);
@@ -444,7 +432,7 @@ ul6.addEventListener("mouseleave", function(){
 		item.classList.remove("active");
 	})
 });
-
+// ***
 
 
 $(function () {

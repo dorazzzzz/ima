@@ -95,7 +95,6 @@ a {
 }
 
 /* scene2 */
-
 #backtostart {
     position: absolute;
     top: 3%;
@@ -260,7 +259,6 @@ a {
     top: -50px;
 }
 
-
 /* scene 3 */
 /* posintroscene */
 #scene3title {
@@ -275,6 +273,8 @@ a {
     margin-top: 15%;
 }
 
+/* *** */
+/* cards effect is written with reference to https://github.com/codingmarket07/Horizontal-Accordion-Menu */
 .wrapper{
 	width: 900px;
 	margin-left: 49%;
@@ -355,7 +355,6 @@ a {
 }
 
 /* wrap2 */
-
 .accordion_wrap2 ul{
 	display: flex;
 	justify-content: center;
@@ -417,7 +416,6 @@ a {
 }
 
 /* wrap3 */
-
 .accordion_wrap3 ul{
 	display: flex;
 	justify-content: center;
@@ -479,7 +477,6 @@ a {
 }
 
 /* wrap4 */
-
 .accordion_wrap4 ul{
 	display: flex;
 	justify-content: center;
@@ -541,7 +538,6 @@ a {
 }
 
 /* wrap5 */
-
 .accordion_wrap5 ul{
 	display: flex;
 	justify-content: center;
@@ -603,7 +599,6 @@ a {
 }
 
 /* wrap6 */
-
 .accordion_wrap6 ul{
 	display: flex;
 	justify-content: center;
@@ -664,7 +659,6 @@ a {
 	width: 200px;
 }
 
-
 .accordion_menu{
 	width: 0px;
 	height: 320px;
@@ -706,10 +700,9 @@ a {
 .accordion_menu .view_more:hover{
 	text-decoration: none;
 }
-
+/* *** */
 
 /* scene 4 */
-
 #scene4title {
     text-align: center;
     font-weight: 800;

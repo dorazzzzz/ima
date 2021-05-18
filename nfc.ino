@@ -1,3 +1,6 @@
+// ***
+// With reference to http://wiki.dfrobot.com.cn/_SKU_DFR0231_H_Gravity_UART_I2C_NFC%E8%BF%91%E5%9C%BA%E9%80%9A%E8%AE%AF%E6%A8%A1%E5%9D%97_V1_0
+
 #include <DFRobot_PN532.h>
 
 #define  BLOCK_SIZE      16
@@ -56,3 +59,6 @@ void loop() {
 
   delay(500);
 }
+
+
+// ***
